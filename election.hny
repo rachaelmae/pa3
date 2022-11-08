@@ -6,7 +6,7 @@ def vote(election, candidate, citizen):
       if election->citizens[citizen].voted:
           result = False
       else:
-          election->citizens[citizen].voted = False
+          election->citizens[citizen].voted = True
           election->citizens[citizen].voted_for = candidate
           election->candidates[candidate] += 1
           result = True
@@ -14,7 +14,8 @@ def vote(election, candidate, citizen):
 def withdraw(election, citizen):
     atomically:
         if election->citizens[citizen].voted:
-            election->citizens[citizen].voted = True
+            election->citizens[citizen].voted = False
+            var candidate = election->citizens[citizen].voted_for
             election->citizens[citizen].voted_for = -1
             election->candidates[candidate] -= 1
             result = True
@@ -30,15 +31,15 @@ def transfer(election, candidate_from, candidate_to):
     atomically:
         election->candidates[candidate_to] += election->candidates[candidate_from]
         election->candidates[candidate_from] = 0
-        for i in {0 .. len(election->citizens)}:
-            if election->citizens[i] == candidate_from:
-                election->citizens[i] = candidate_to;
+        for i in {0 .. len(election->citizens) - 1}:
+            if (election->citizens[i].voted_for == candidate_from):
+                election->citizens[i].voted_for = candidate_to
 
 def winner(election):
     atomically:
         var winner = -1;
         var winner_count = 0;
-        for i in {0 .. len(election->candidates)}:
+        for i in {0 .. len(election->candidates) - 1}:
             if election->candidates[i] > winner_count:
                 winner_count = election->candidates[i]
                 winner = i

@@ -1,0 +1,4382 @@
+<html>
+<head>
+  <meta charset='UTF-8'></meta>
+  <style>
+#table-wrapper {
+  position:relative;
+}
+#table-scroll {
+  height:200px;
+  overflow:auto;  
+}
+#table-wrapper table {
+  width:100%;
+}
+#table-wrapper table * {
+  color:black;
+}
+#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:20px;
+  width:35%;
+  border:1px solid red;
+}
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+table td, table th {
+    border: 1px solid black;
+}
+
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan='2'>
+<table border='1'>
+  <thead>
+    <tr>
+      <th colspan='4' style='color:red;'>
+        Issue: No issues
+      </th>
+    </tr>
+</table>
+    </td>
+  </tr>
+  <tr><td></td></tr>
+  <tr>
+    <td colspan='2'>
+      <h3 style='color:blue;'>
+        <div id='coderow'>
+        </div>
+      </h3>
+    </td>
+  </tr>
+  <tr>
+    <td colspan='2'>
+      <h3 style='color:green;'>
+        <div id='hvmrow'>
+        </div>
+      </h3>
+    </td>
+  </tr>
+  <tr><td></td></tr>
+  <tr>
+    <td valign='top'>
+<div id='table-wrapper'>
+  <div id='table-scroll'>
+    <table border='1'>
+      <tbody>
+        <tr id='P0'>
+          <td align='right'>
+            <a name='P0'>0</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='start of method __init__' id='C0'>
+              Frame __init__()
+            </span>
+          </td>
+        </tr>
+        <tr id='P1'>
+          <td align='right'>
+            <a name='P1'>1</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='jump over method definition: set program counter to 253' id='C1'>
+              Jump 253
+            </span>
+          </td>
+        </tr>
+        <tr id='P2'>
+          <td align='right'>
+            <a name='P2'>2</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='start of method Election' id='C2'>
+              Frame Election(n, m)
+            </span>
+          </td>
+        </tr>
+        <tr id='P3'>
+          <td align='right'>
+            <a name='P3'>3</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable result' id='C3'>
+              DelVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P4'>
+          <td align='right'>
+            <a name='P4'>4</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant {:}' id='C4'>
+              Push {:}
+            </span>
+          </td>
+        </tr>
+        <tr id='P5'>
+          <td align='right'>
+            <a name='P5'>5</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "candidates"' id='C5'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P6'>
+          <td align='right'>
+            <a name='P6'>6</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant [0,]' id='C6'>
+              Push [0,]
+            </span>
+          </td>
+        </tr>
+        <tr id='P7'>
+          <td align='right'>
+            <a name='P7'>7</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of n' id='C7'>
+              LoadVar n
+            </span>
+          </td>
+        </tr>
+        <tr id='P8'>
+          <td align='right'>
+            <a name='P8'>8</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable n' id='C8'>
+              DelVar n
+            </span>
+          </td>
+        </tr>
+        <tr id='P9'>
+          <td align='right'>
+            <a name='P9'>9</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop 2 values and push the result of applying *' id='C9'>
+              2-ary *
+            </span>
+          </td>
+        </tr>
+        <tr id='P10'>
+          <td align='right'>
+            <a name='P10'>10</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop 3 values and push the result of applying DictAdd' id='C10'>
+              3-ary DictAdd
+            </span>
+          </td>
+        </tr>
+        <tr id='P11'>
+          <td align='right'>
+            <a name='P11'>11</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "citizens"' id='C11'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P12'>
+          <td align='right'>
+            <a name='P12'>12</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant [{ "voted":False, "voted_for":-1 },]' id='C12'>
+              Push [{ "voted":False, "voted_for":-1 },]
+            </span>
+          </td>
+        </tr>
+        <tr id='P13'>
+          <td align='right'>
+            <a name='P13'>13</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of m' id='C13'>
+              LoadVar m
+            </span>
+          </td>
+        </tr>
+        <tr id='P14'>
+          <td align='right'>
+            <a name='P14'>14</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable m' id='C14'>
+              DelVar m
+            </span>
+          </td>
+        </tr>
+        <tr id='P15'>
+          <td align='right'>
+            <a name='P15'>15</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop 2 values and push the result of applying *' id='C15'>
+              2-ary *
+            </span>
+          </td>
+        </tr>
+        <tr id='P16'>
+          <td align='right'>
+            <a name='P16'>16</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop 3 values and push the result of applying DictAdd' id='C16'>
+              3-ary DictAdd
+            </span>
+          </td>
+        </tr>
+        <tr id='P17'>
+          <td align='right'>
+            <a name='P17'>17</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and store in result' id='C17'>
+              StoreVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P18'>
+          <td align='right'>
+            <a name='P18'>18</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='restore caller method state and push result' id='C18'>
+              Return
+            </span>
+          </td>
+        </tr>
+        <tr id='P19'>
+          <td align='right'>
+            <a name='P19'>19</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='jump over method definition: set program counter to 253' id='C19'>
+              Jump 253
+            </span>
+          </td>
+        </tr>
+        <tr id='P20'>
+          <td align='right'>
+            <a name='P20'>20</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='start of method vote' id='C20'>
+              Frame vote(election, candidate, citizen)
+            </span>
+          </td>
+        </tr>
+        <tr id='P21'>
+          <td align='right'>
+            <a name='P21'>21</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable result' id='C21'>
+              DelVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P22'>
+          <td align='right'>
+            <a name='P22'>22</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='increment atomic counter of context; thread runs uninterrupted if larger than 0' id='C22'>
+              AtomicInc(lazy)
+            </span>
+          </td>
+        </tr>
+        <tr id='P23'>
+          <td align='right'>
+            <a name='P23'>23</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C23'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P24'>
+          <td align='right'>
+            <a name='P24'>24</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "citizens"' id='C24'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P25'>
+          <td align='right'>
+            <a name='P25'>25</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C25'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P26'>
+          <td align='right'>
+            <a name='P26'>26</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of citizen' id='C26'>
+              LoadVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P27'>
+          <td align='right'>
+            <a name='P27'>27</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C27'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P28'>
+          <td align='right'>
+            <a name='P28'>28</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "voted"' id='C28'>
+              Push "voted"
+            </span>
+          </td>
+        </tr>
+        <tr id='P29'>
+          <td align='right'>
+            <a name='P29'>29</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C29'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P30'>
+          <td align='right'>
+            <a name='P30'>30</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop an address and push the value at the address' id='C30'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P31'>
+          <td align='right'>
+            <a name='P31'>31</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and jump to 38 if the value is False' id='C31'>
+              JumpCond False 38
+            </span>
+          </td>
+        </tr>
+        <tr id='P32'>
+          <td align='right'>
+            <a name='P32'>32</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable candidate' id='C32'>
+              DelVar candidate
+            </span>
+          </td>
+        </tr>
+        <tr id='P33'>
+          <td align='right'>
+            <a name='P33'>33</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable citizen' id='C33'>
+              DelVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P34'>
+          <td align='right'>
+            <a name='P34'>34</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable election' id='C34'>
+              DelVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P35'>
+          <td align='right'>
+            <a name='P35'>35</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant False' id='C35'>
+              Push False
+            </span>
+          </td>
+        </tr>
+        <tr id='P36'>
+          <td align='right'>
+            <a name='P36'>36</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and store in result' id='C36'>
+              StoreVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P37'>
+          <td align='right'>
+            <a name='P37'>37</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='set program counter to 71' id='C37'>
+              Jump 71
+            </span>
+          </td>
+        </tr>
+        <tr id='P38'>
+          <td align='right'>
+            <a name='P38'>38</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of election' id='C38'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P39'>
+          <td align='right'>
+            <a name='P39'>39</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "citizens"' id='C39'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P40'>
+          <td align='right'>
+            <a name='P40'>40</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C40'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P41'>
+          <td align='right'>
+            <a name='P41'>41</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of citizen' id='C41'>
+              LoadVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P42'>
+          <td align='right'>
+            <a name='P42'>42</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C42'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P43'>
+          <td align='right'>
+            <a name='P43'>43</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "voted"' id='C43'>
+              Push "voted"
+            </span>
+          </td>
+        </tr>
+        <tr id='P44'>
+          <td align='right'>
+            <a name='P44'>44</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C44'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P45'>
+          <td align='right'>
+            <a name='P45'>45</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant False' id='C45'>
+              Push False
+            </span>
+          </td>
+        </tr>
+        <tr id='P46'>
+          <td align='right'>
+            <a name='P46'>46</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and an address and store the value at the address' id='C46'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P47'>
+          <td align='right'>
+            <a name='P47'>47</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C47'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P48'>
+          <td align='right'>
+            <a name='P48'>48</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "citizens"' id='C48'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P49'>
+          <td align='right'>
+            <a name='P49'>49</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C49'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P50'>
+          <td align='right'>
+            <a name='P50'>50</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of citizen' id='C50'>
+              LoadVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P51'>
+          <td align='right'>
+            <a name='P51'>51</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable citizen' id='C51'>
+              DelVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P52'>
+          <td align='right'>
+            <a name='P52'>52</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C52'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P53'>
+          <td align='right'>
+            <a name='P53'>53</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "voted_for"' id='C53'>
+              Push "voted_for"
+            </span>
+          </td>
+        </tr>
+        <tr id='P54'>
+          <td align='right'>
+            <a name='P54'>54</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C54'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P55'>
+          <td align='right'>
+            <a name='P55'>55</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of candidate' id='C55'>
+              LoadVar candidate
+            </span>
+          </td>
+        </tr>
+        <tr id='P56'>
+          <td align='right'>
+            <a name='P56'>56</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and an address and store the value at the address' id='C56'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P57'>
+          <td align='right'>
+            <a name='P57'>57</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C57'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P58'>
+          <td align='right'>
+            <a name='P58'>58</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable election' id='C58'>
+              DelVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P59'>
+          <td align='right'>
+            <a name='P59'>59</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "candidates"' id='C59'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P60'>
+          <td align='right'>
+            <a name='P60'>60</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C60'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P61'>
+          <td align='right'>
+            <a name='P61'>61</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of candidate' id='C61'>
+              LoadVar candidate
+            </span>
+          </td>
+        </tr>
+        <tr id='P62'>
+          <td align='right'>
+            <a name='P62'>62</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable candidate' id='C62'>
+              DelVar candidate
+            </span>
+          </td>
+        </tr>
+        <tr id='P63'>
+          <td align='right'>
+            <a name='P63'>63</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C63'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P64'>
+          <td align='right'>
+            <a name='P64'>64</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push a copy of the top value on the stack' id='C64'>
+              Dup
+            </span>
+          </td>
+        </tr>
+        <tr id='P65'>
+          <td align='right'>
+            <a name='P65'>65</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop an address and push the value at the address' id='C65'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P66'>
+          <td align='right'>
+            <a name='P66'>66</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant 1' id='C66'>
+              Push 1
+            </span>
+          </td>
+        </tr>
+        <tr id='P67'>
+          <td align='right'>
+            <a name='P67'>67</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop 2 values and push the result of applying +' id='C67'>
+              2-ary +
+            </span>
+          </td>
+        </tr>
+        <tr id='P68'>
+          <td align='right'>
+            <a name='P68'>68</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and an address and store the value at the address' id='C68'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P69'>
+          <td align='right'>
+            <a name='P69'>69</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant True' id='C69'>
+              Push True
+            </span>
+          </td>
+        </tr>
+        <tr id='P70'>
+          <td align='right'>
+            <a name='P70'>70</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and store in result' id='C70'>
+              StoreVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P71'>
+          <td align='right'>
+            <a name='P71'>71</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='decrement atomic counter of context' id='C71'>
+              AtomicDec
+            </span>
+          </td>
+        </tr>
+        <tr id='P72'>
+          <td align='right'>
+            <a name='P72'>72</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='restore caller method state and push result' id='C72'>
+              Return
+            </span>
+          </td>
+        </tr>
+        <tr id='P73'>
+          <td align='right'>
+            <a name='P73'>73</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='jump over method definition: set program counter to 253' id='C73'>
+              Jump 253
+            </span>
+          </td>
+        </tr>
+        <tr id='P74'>
+          <td align='right'>
+            <a name='P74'>74</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='start of method withdraw' id='C74'>
+              Frame withdraw(election, citizen)
+            </span>
+          </td>
+        </tr>
+        <tr id='P75'>
+          <td align='right'>
+            <a name='P75'>75</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable result' id='C75'>
+              DelVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P76'>
+          <td align='right'>
+            <a name='P76'>76</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='increment atomic counter of context; thread runs uninterrupted if larger than 0' id='C76'>
+              AtomicInc(lazy)
+            </span>
+          </td>
+        </tr>
+        <tr id='P77'>
+          <td align='right'>
+            <a name='P77'>77</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C77'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P78'>
+          <td align='right'>
+            <a name='P78'>78</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "citizens"' id='C78'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P79'>
+          <td align='right'>
+            <a name='P79'>79</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C79'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P80'>
+          <td align='right'>
+            <a name='P80'>80</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of citizen' id='C80'>
+              LoadVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P81'>
+          <td align='right'>
+            <a name='P81'>81</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C81'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P82'>
+          <td align='right'>
+            <a name='P82'>82</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "voted"' id='C82'>
+              Push "voted"
+            </span>
+          </td>
+        </tr>
+        <tr id='P83'>
+          <td align='right'>
+            <a name='P83'>83</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C83'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P84'>
+          <td align='right'>
+            <a name='P84'>84</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop an address and push the value at the address' id='C84'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P85'>
+          <td align='right'>
+            <a name='P85'>85</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and jump to 119 if the value is False' id='C85'>
+              JumpCond False 119
+            </span>
+          </td>
+        </tr>
+        <tr id='P86'>
+          <td align='right'>
+            <a name='P86'>86</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of election' id='C86'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P87'>
+          <td align='right'>
+            <a name='P87'>87</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "citizens"' id='C87'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P88'>
+          <td align='right'>
+            <a name='P88'>88</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C88'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P89'>
+          <td align='right'>
+            <a name='P89'>89</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of citizen' id='C89'>
+              LoadVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P90'>
+          <td align='right'>
+            <a name='P90'>90</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C90'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P91'>
+          <td align='right'>
+            <a name='P91'>91</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "voted"' id='C91'>
+              Push "voted"
+            </span>
+          </td>
+        </tr>
+        <tr id='P92'>
+          <td align='right'>
+            <a name='P92'>92</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C92'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P93'>
+          <td align='right'>
+            <a name='P93'>93</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant False' id='C93'>
+              Push False
+            </span>
+          </td>
+        </tr>
+        <tr id='P94'>
+          <td align='right'>
+            <a name='P94'>94</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and an address and store the value at the address' id='C94'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P95'>
+          <td align='right'>
+            <a name='P95'>95</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C95'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P96'>
+          <td align='right'>
+            <a name='P96'>96</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "citizens"' id='C96'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P97'>
+          <td align='right'>
+            <a name='P97'>97</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C97'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P98'>
+          <td align='right'>
+            <a name='P98'>98</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of citizen' id='C98'>
+              LoadVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P99'>
+          <td align='right'>
+            <a name='P99'>99</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable citizen' id='C99'>
+              DelVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P100'>
+          <td align='right'>
+            <a name='P100'>100</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C100'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P101'>
+          <td align='right'>
+            <a name='P101'>101</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "voted_for"' id='C101'>
+              Push "voted_for"
+            </span>
+          </td>
+        </tr>
+        <tr id='P102'>
+          <td align='right'>
+            <a name='P102'>102</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C102'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P103'>
+          <td align='right'>
+            <a name='P103'>103</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant -1' id='C103'>
+              Push -1
+            </span>
+          </td>
+        </tr>
+        <tr id='P104'>
+          <td align='right'>
+            <a name='P104'>104</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and an address and store the value at the address' id='C104'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P105'>
+          <td align='right'>
+            <a name='P105'>105</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C105'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P106'>
+          <td align='right'>
+            <a name='P106'>106</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable election' id='C106'>
+              DelVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P107'>
+          <td align='right'>
+            <a name='P107'>107</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "candidates"' id='C107'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P108'>
+          <td align='right'>
+            <a name='P108'>108</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C108'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P109'>
+          <td align='right'>
+            <a name='P109'>109</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push value of shared variable candidate' id='C109'>
+              Load candidate
+            </span>
+          </td>
+        </tr>
+        <tr id='P110'>
+          <td align='right'>
+            <a name='P110'>110</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C110'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P111'>
+          <td align='right'>
+            <a name='P111'>111</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push a copy of the top value on the stack' id='C111'>
+              Dup
+            </span>
+          </td>
+        </tr>
+        <tr id='P112'>
+          <td align='right'>
+            <a name='P112'>112</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop an address and push the value at the address' id='C112'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P113'>
+          <td align='right'>
+            <a name='P113'>113</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant 1' id='C113'>
+              Push 1
+            </span>
+          </td>
+        </tr>
+        <tr id='P114'>
+          <td align='right'>
+            <a name='P114'>114</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop 2 values and push the result of applying -' id='C114'>
+              2-ary -
+            </span>
+          </td>
+        </tr>
+        <tr id='P115'>
+          <td align='right'>
+            <a name='P115'>115</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and an address and store the value at the address' id='C115'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P116'>
+          <td align='right'>
+            <a name='P116'>116</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant True' id='C116'>
+              Push True
+            </span>
+          </td>
+        </tr>
+        <tr id='P117'>
+          <td align='right'>
+            <a name='P117'>117</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and store in result' id='C117'>
+              StoreVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P118'>
+          <td align='right'>
+            <a name='P118'>118</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='set program counter to 123' id='C118'>
+              Jump 123
+            </span>
+          </td>
+        </tr>
+        <tr id='P119'>
+          <td align='right'>
+            <a name='P119'>119</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable citizen' id='C119'>
+              DelVar citizen
+            </span>
+          </td>
+        </tr>
+        <tr id='P120'>
+          <td align='right'>
+            <a name='P120'>120</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable election' id='C120'>
+              DelVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P121'>
+          <td align='right'>
+            <a name='P121'>121</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant False' id='C121'>
+              Push False
+            </span>
+          </td>
+        </tr>
+        <tr id='P122'>
+          <td align='right'>
+            <a name='P122'>122</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and store in result' id='C122'>
+              StoreVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P123'>
+          <td align='right'>
+            <a name='P123'>123</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='decrement atomic counter of context' id='C123'>
+              AtomicDec
+            </span>
+          </td>
+        </tr>
+        <tr id='P124'>
+          <td align='right'>
+            <a name='P124'>124</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='restore caller method state and push result' id='C124'>
+              Return
+            </span>
+          </td>
+        </tr>
+        <tr id='P125'>
+          <td align='right'>
+            <a name='P125'>125</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='jump over method definition: set program counter to 253' id='C125'>
+              Jump 253
+            </span>
+          </td>
+        </tr>
+        <tr id='P126'>
+          <td align='right'>
+            <a name='P126'>126</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='start of method get_votes' id='C126'>
+              Frame get_votes(election, candidate)
+            </span>
+          </td>
+        </tr>
+        <tr id='P127'>
+          <td align='right'>
+            <a name='P127'>127</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable result' id='C127'>
+              DelVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P128'>
+          <td align='right'>
+            <a name='P128'>128</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='increment atomic counter of context; thread runs uninterrupted if larger than 0' id='C128'>
+              AtomicInc(lazy)
+            </span>
+          </td>
+        </tr>
+        <tr id='P129'>
+          <td align='right'>
+            <a name='P129'>129</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C129'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P130'>
+          <td align='right'>
+            <a name='P130'>130</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable election' id='C130'>
+              DelVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P131'>
+          <td align='right'>
+            <a name='P131'>131</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "candidates"' id='C131'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P132'>
+          <td align='right'>
+            <a name='P132'>132</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C132'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P133'>
+          <td align='right'>
+            <a name='P133'>133</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of candidate' id='C133'>
+              LoadVar candidate
+            </span>
+          </td>
+        </tr>
+        <tr id='P134'>
+          <td align='right'>
+            <a name='P134'>134</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable candidate' id='C134'>
+              DelVar candidate
+            </span>
+          </td>
+        </tr>
+        <tr id='P135'>
+          <td align='right'>
+            <a name='P135'>135</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C135'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P136'>
+          <td align='right'>
+            <a name='P136'>136</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop an address and push the value at the address' id='C136'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P137'>
+          <td align='right'>
+            <a name='P137'>137</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and store in result' id='C137'>
+              StoreVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P138'>
+          <td align='right'>
+            <a name='P138'>138</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='decrement atomic counter of context' id='C138'>
+              AtomicDec
+            </span>
+          </td>
+        </tr>
+        <tr id='P139'>
+          <td align='right'>
+            <a name='P139'>139</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='restore caller method state and push result' id='C139'>
+              Return
+            </span>
+          </td>
+        </tr>
+        <tr id='P140'>
+          <td align='right'>
+            <a name='P140'>140</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='jump over method definition: set program counter to 253' id='C140'>
+              Jump 253
+            </span>
+          </td>
+        </tr>
+        <tr id='P141'>
+          <td align='right'>
+            <a name='P141'>141</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='start of method transfer' id='C141'>
+              Frame transfer(election, candidate_from, candidate_to)
+            </span>
+          </td>
+        </tr>
+        <tr id='P142'>
+          <td align='right'>
+            <a name='P142'>142</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='increment atomic counter of context; thread runs uninterrupted if larger than 0' id='C142'>
+              AtomicInc(lazy)
+            </span>
+          </td>
+        </tr>
+        <tr id='P143'>
+          <td align='right'>
+            <a name='P143'>143</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C143'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P144'>
+          <td align='right'>
+            <a name='P144'>144</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "candidates"' id='C144'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P145'>
+          <td align='right'>
+            <a name='P145'>145</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C145'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P146'>
+          <td align='right'>
+            <a name='P146'>146</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of candidate_to' id='C146'>
+              LoadVar candidate_to
+            </span>
+          </td>
+        </tr>
+        <tr id='P147'>
+          <td align='right'>
+            <a name='P147'>147</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C147'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P148'>
+          <td align='right'>
+            <a name='P148'>148</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push a copy of the top value on the stack' id='C148'>
+              Dup
+            </span>
+          </td>
+        </tr>
+        <tr id='P149'>
+          <td align='right'>
+            <a name='P149'>149</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop an address and push the value at the address' id='C149'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P150'>
+          <td align='right'>
+            <a name='P150'>150</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of election' id='C150'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P151'>
+          <td align='right'>
+            <a name='P151'>151</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "candidates"' id='C151'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P152'>
+          <td align='right'>
+            <a name='P152'>152</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C152'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P153'>
+          <td align='right'>
+            <a name='P153'>153</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of candidate_from' id='C153'>
+              LoadVar candidate_from
+            </span>
+          </td>
+        </tr>
+        <tr id='P154'>
+          <td align='right'>
+            <a name='P154'>154</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C154'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P155'>
+          <td align='right'>
+            <a name='P155'>155</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop an address and push the value at the address' id='C155'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P156'>
+          <td align='right'>
+            <a name='P156'>156</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop 2 values and push the result of applying +' id='C156'>
+              2-ary +
+            </span>
+          </td>
+        </tr>
+        <tr id='P157'>
+          <td align='right'>
+            <a name='P157'>157</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and an address and store the value at the address' id='C157'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P158'>
+          <td align='right'>
+            <a name='P158'>158</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of election' id='C158'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P159'>
+          <td align='right'>
+            <a name='P159'>159</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "candidates"' id='C159'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P160'>
+          <td align='right'>
+            <a name='P160'>160</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C160'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P161'>
+          <td align='right'>
+            <a name='P161'>161</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of candidate_from' id='C161'>
+              LoadVar candidate_from
+            </span>
+          </td>
+        </tr>
+        <tr id='P162'>
+          <td align='right'>
+            <a name='P162'>162</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C162'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P163'>
+          <td align='right'>
+            <a name='P163'>163</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant 0' id='C163'>
+              Push 0
+            </span>
+          </td>
+        </tr>
+        <tr id='P164'>
+          <td align='right'>
+            <a name='P164'>164</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and an address and store the value at the address' id='C164'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P165'>
+          <td align='right'>
+            <a name='P165'>165</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant 0' id='C165'>
+              Push 0
+            </span>
+          </td>
+        </tr>
+        <tr id='P166'>
+          <td align='right'>
+            <a name='P166'>166</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of election' id='C166'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P167'>
+          <td align='right'>
+            <a name='P167'>167</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "citizens"' id='C167'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P168'>
+          <td align='right'>
+            <a name='P168'>168</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C168'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P169'>
+          <td align='right'>
+            <a name='P169'>169</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop an address and push the value at the address' id='C169'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P170'>
+          <td align='right'>
+            <a name='P170'>170</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop 1 value and push the result of applying len' id='C170'>
+              1-ary len
+            </span>
+          </td>
+        </tr>
+        <tr id='P171'>
+          <td align='right'>
+            <a name='P171'>171</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop 2 values and push the result of applying ..' id='C171'>
+              2-ary ..
+            </span>
+          </td>
+        </tr>
+        <tr id='P172'>
+          <td align='right'>
+            <a name='P172'>172</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant 0' id='C172'>
+              Push 0
+            </span>
+          </td>
+        </tr>
+        <tr id='P173'>
+          <td align='right'>
+            <a name='P173'>173</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='get next element and assign to i; push False or True depending on success' id='C173'>
+              Cut(i)
+            </span>
+          </td>
+        </tr>
+        <tr id='P174'>
+          <td align='right'>
+            <a name='P174'>174</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='check if loop is done: pop a value and jump to 198 if the value is False' id='C174'>
+              JumpCond False 198
+            </span>
+          </td>
+        </tr>
+        <tr id='P175'>
+          <td align='right'>
+            <a name='P175'>175</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C175'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P176'>
+          <td align='right'>
+            <a name='P176'>176</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "citizens"' id='C176'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P177'>
+          <td align='right'>
+            <a name='P177'>177</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C177'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P178'>
+          <td align='right'>
+            <a name='P178'>178</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of i' id='C178'>
+              LoadVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P179'>
+          <td align='right'>
+            <a name='P179'>179</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C179'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P180'>
+          <td align='right'>
+            <a name='P180'>180</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "voted_for"' id='C180'>
+              Push "voted_for"
+            </span>
+          </td>
+        </tr>
+        <tr id='P181'>
+          <td align='right'>
+            <a name='P181'>181</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C181'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P182'>
+          <td align='right'>
+            <a name='P182'>182</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop an address and push the value at the address' id='C182'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P183'>
+          <td align='right'>
+            <a name='P183'>183</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of candidate_from' id='C183'>
+              LoadVar candidate_from
+            </span>
+          </td>
+        </tr>
+        <tr id='P184'>
+          <td align='right'>
+            <a name='P184'>184</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop 2 values and push the result of applying ==' id='C184'>
+              2-ary ==
+            </span>
+          </td>
+        </tr>
+        <tr id='P185'>
+          <td align='right'>
+            <a name='P185'>185</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and jump to 196 if the value is False' id='C185'>
+              JumpCond False 196
+            </span>
+          </td>
+        </tr>
+        <tr id='P186'>
+          <td align='right'>
+            <a name='P186'>186</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of election' id='C186'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P187'>
+          <td align='right'>
+            <a name='P187'>187</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "citizens"' id='C187'>
+              Push "citizens"
+            </span>
+          </td>
+        </tr>
+        <tr id='P188'>
+          <td align='right'>
+            <a name='P188'>188</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C188'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P189'>
+          <td align='right'>
+            <a name='P189'>189</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of i' id='C189'>
+              LoadVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P190'>
+          <td align='right'>
+            <a name='P190'>190</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable i' id='C190'>
+              DelVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P191'>
+          <td align='right'>
+            <a name='P191'>191</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C191'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P192'>
+          <td align='right'>
+            <a name='P192'>192</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "voted_for"' id='C192'>
+              Push "voted_for"
+            </span>
+          </td>
+        </tr>
+        <tr id='P193'>
+          <td align='right'>
+            <a name='P193'>193</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C193'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P194'>
+          <td align='right'>
+            <a name='P194'>194</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of candidate_to' id='C194'>
+              LoadVar candidate_to
+            </span>
+          </td>
+        </tr>
+        <tr id='P195'>
+          <td align='right'>
+            <a name='P195'>195</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and an address and store the value at the address' id='C195'>
+              Store
+            </span>
+          </td>
+        </tr>
+        <tr id='P196'>
+          <td align='right'>
+            <a name='P196'>196</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable i' id='C196'>
+              DelVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P197'>
+          <td align='right'>
+            <a name='P197'>197</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='set program counter to 173' id='C197'>
+              Jump 173
+            </span>
+          </td>
+        </tr>
+        <tr id='P198'>
+          <td align='right'>
+            <a name='P198'>198</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable candidate_from' id='C198'>
+              DelVar candidate_from
+            </span>
+          </td>
+        </tr>
+        <tr id='P199'>
+          <td align='right'>
+            <a name='P199'>199</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable candidate_to' id='C199'>
+              DelVar candidate_to
+            </span>
+          </td>
+        </tr>
+        <tr id='P200'>
+          <td align='right'>
+            <a name='P200'>200</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable election' id='C200'>
+              DelVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P201'>
+          <td align='right'>
+            <a name='P201'>201</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable i' id='C201'>
+              DelVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P202'>
+          <td align='right'>
+            <a name='P202'>202</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='decrement atomic counter of context' id='C202'>
+              AtomicDec
+            </span>
+          </td>
+        </tr>
+        <tr id='P203'>
+          <td align='right'>
+            <a name='P203'>203</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='restore caller method state and push result' id='C203'>
+              Return
+            </span>
+          </td>
+        </tr>
+        <tr id='P204'>
+          <td align='right'>
+            <a name='P204'>204</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='jump over method definition: set program counter to 253' id='C204'>
+              Jump 253
+            </span>
+          </td>
+        </tr>
+        <tr id='P205'>
+          <td align='right'>
+            <a name='P205'>205</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='start of method winner' id='C205'>
+              Frame winner(election)
+            </span>
+          </td>
+        </tr>
+        <tr id='P206'>
+          <td align='right'>
+            <a name='P206'>206</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable result' id='C206'>
+              DelVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P207'>
+          <td align='right'>
+            <a name='P207'>207</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='increment atomic counter of context; thread runs uninterrupted if larger than 0' id='C207'>
+              AtomicInc(lazy)
+            </span>
+          </td>
+        </tr>
+        <tr id='P208'>
+          <td align='right'>
+            <a name='P208'>208</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant -1' id='C208'>
+              Push -1
+            </span>
+          </td>
+        </tr>
+        <tr id='P209'>
+          <td align='right'>
+            <a name='P209'>209</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and store in winner' id='C209'>
+              StoreVar winner
+            </span>
+          </td>
+        </tr>
+        <tr id='P210'>
+          <td align='right'>
+            <a name='P210'>210</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant 0' id='C210'>
+              Push 0
+            </span>
+          </td>
+        </tr>
+        <tr id='P211'>
+          <td align='right'>
+            <a name='P211'>211</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and store in winner_count' id='C211'>
+              StoreVar winner_count
+            </span>
+          </td>
+        </tr>
+        <tr id='P212'>
+          <td align='right'>
+            <a name='P212'>212</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant 0' id='C212'>
+              Push 0
+            </span>
+          </td>
+        </tr>
+        <tr id='P213'>
+          <td align='right'>
+            <a name='P213'>213</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C213'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P214'>
+          <td align='right'>
+            <a name='P214'>214</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "candidates"' id='C214'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P215'>
+          <td align='right'>
+            <a name='P215'>215</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C215'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P216'>
+          <td align='right'>
+            <a name='P216'>216</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop an address and push the value at the address' id='C216'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P217'>
+          <td align='right'>
+            <a name='P217'>217</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop 1 value and push the result of applying len' id='C217'>
+              1-ary len
+            </span>
+          </td>
+        </tr>
+        <tr id='P218'>
+          <td align='right'>
+            <a name='P218'>218</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop 2 values and push the result of applying ..' id='C218'>
+              2-ary ..
+            </span>
+          </td>
+        </tr>
+        <tr id='P219'>
+          <td align='right'>
+            <a name='P219'>219</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant 0' id='C219'>
+              Push 0
+            </span>
+          </td>
+        </tr>
+        <tr id='P220'>
+          <td align='right'>
+            <a name='P220'>220</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='get next element and assign to i; push False or True depending on success' id='C220'>
+              Cut(i)
+            </span>
+          </td>
+        </tr>
+        <tr id='P221'>
+          <td align='right'>
+            <a name='P221'>221</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='check if loop is done: pop a value and jump to 245 if the value is False' id='C221'>
+              JumpCond False 245
+            </span>
+          </td>
+        </tr>
+        <tr id='P222'>
+          <td align='right'>
+            <a name='P222'>222</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of election' id='C222'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P223'>
+          <td align='right'>
+            <a name='P223'>223</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push constant "candidates"' id='C223'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P224'>
+          <td align='right'>
+            <a name='P224'>224</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C224'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P225'>
+          <td align='right'>
+            <a name='P225'>225</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of i' id='C225'>
+              LoadVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P226'>
+          <td align='right'>
+            <a name='P226'>226</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C226'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P227'>
+          <td align='right'>
+            <a name='P227'>227</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop an address and push the value at the address' id='C227'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P228'>
+          <td align='right'>
+            <a name='P228'>228</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of winner_count' id='C228'>
+              LoadVar winner_count
+            </span>
+          </td>
+        </tr>
+        <tr id='P229'>
+          <td align='right'>
+            <a name='P229'>229</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop 2 values and push the result of applying >' id='C229'>
+              2-ary >
+            </span>
+          </td>
+        </tr>
+        <tr id='P230'>
+          <td align='right'>
+            <a name='P230'>230</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and jump to 243 if the value is False' id='C230'>
+              JumpCond False 243
+            </span>
+          </td>
+        </tr>
+        <tr id='P231'>
+          <td align='right'>
+            <a name='P231'>231</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable winner' id='C231'>
+              DelVar winner
+            </span>
+          </td>
+        </tr>
+        <tr id='P232'>
+          <td align='right'>
+            <a name='P232'>232</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable winner_count' id='C232'>
+              DelVar winner_count
+            </span>
+          </td>
+        </tr>
+        <tr id='P233'>
+          <td align='right'>
+            <a name='P233'>233</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='push the value of election' id='C233'>
+              LoadVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P234'>
+          <td align='right'>
+            <a name='P234'>234</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push constant "candidates"' id='C234'>
+              Push "candidates"
+            </span>
+          </td>
+        </tr>
+        <tr id='P235'>
+          <td align='right'>
+            <a name='P235'>235</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C235'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P236'>
+          <td align='right'>
+            <a name='P236'>236</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of i' id='C236'>
+              LoadVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P237'>
+          <td align='right'>
+            <a name='P237'>237</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='combine the top two values on the stack into an address and push the result' id='C237'>
+              Address
+            </span>
+          </td>
+        </tr>
+        <tr id='P238'>
+          <td align='right'>
+            <a name='P238'>238</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop an address and push the value at the address' id='C238'>
+              Load
+            </span>
+          </td>
+        </tr>
+        <tr id='P239'>
+          <td align='right'>
+            <a name='P239'>239</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='pop a value and store in winner_count' id='C239'>
+              StoreVar winner_count
+            </span>
+          </td>
+        </tr>
+        <tr id='P240'>
+          <td align='right'>
+            <a name='P240'>240</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of i' id='C240'>
+              LoadVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P241'>
+          <td align='right'>
+            <a name='P241'>241</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable i' id='C241'>
+              DelVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P242'>
+          <td align='right'>
+            <a name='P242'>242</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and store in winner' id='C242'>
+              StoreVar winner
+            </span>
+          </td>
+        </tr>
+        <tr id='P243'>
+          <td align='right'>
+            <a name='P243'>243</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable i' id='C243'>
+              DelVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P244'>
+          <td align='right'>
+            <a name='P244'>244</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='set program counter to 220' id='C244'>
+              Jump 220
+            </span>
+          </td>
+        </tr>
+        <tr id='P245'>
+          <td align='right'>
+            <a name='P245'>245</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable election' id='C245'>
+              DelVar election
+            </span>
+          </td>
+        </tr>
+        <tr id='P246'>
+          <td align='right'>
+            <a name='P246'>246</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable i' id='C246'>
+              DelVar i
+            </span>
+          </td>
+        </tr>
+        <tr id='P247'>
+          <td align='right'>
+            <a name='P247'>247</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable winner_count' id='C247'>
+              DelVar winner_count
+            </span>
+          </td>
+        </tr>
+        <tr id='P248'>
+          <td align='right'>
+            <a name='P248'>248</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='push the value of winner' id='C248'>
+              LoadVar winner
+            </span>
+          </td>
+        </tr>
+        <tr id='P249'>
+          <td align='right'>
+            <a name='P249'>249</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='delete method variable winner' id='C249'>
+              DelVar winner
+            </span>
+          </td>
+        </tr>
+        <tr id='P250'>
+          <td align='right'>
+            <a name='P250'>250</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='pop a value and store in result' id='C250'>
+              StoreVar result
+            </span>
+          </td>
+        </tr>
+        <tr id='P251'>
+          <td align='right'>
+            <a name='P251'>251</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='decrement atomic counter of context' id='C251'>
+              AtomicDec
+            </span>
+          </td>
+        </tr>
+        <tr id='P252'>
+          <td align='right'>
+            <a name='P252'>252</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='restore caller method state and push result' id='C252'>
+              Return
+            </span>
+          </td>
+        </tr>
+        <tr id='P253'>
+          <td align='right'>
+            <a name='P253'>253</a>&nbsp;
+          </td>
+          <td style='background-color: white;'>
+            <span title='restore caller method state and push result' id='C253'>
+              Return
+            </span>
+          </td>
+        </tr>
+        <tr id='P254'>
+          <td align='right'>
+            <a name='P254'>254</a>&nbsp;
+          </td>
+          <td style='background-color: #E6E6E6;'>
+            <span title='delete method variable result' id='C254'>
+              DelVar result
+            </span>
+          </td>
+        </tr>
+      </body>
+    </table>
+  </div>
+</div>
+    </td>
+    <td valign='top'>
+    </td>
+  </tr>
+</table>
+<script>
+var nthreads = 0;
+var nmegasteps = 0;
+var vardir = [
+  []
+];
+var state =
+{
+  "issue": "No issues",
+  "symbols": {
+
+  },
+  "profile": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "code": [
+    "Frame __init__()",
+    "Jump 253",
+    "Frame Election(n, m)",
+    "DelVar result",
+    "Push {:}",
+    "Push \"candidates\"",
+    "Push [0,]",
+    "LoadVar n",
+    "DelVar n",
+    "2-ary *",
+    "3-ary DictAdd",
+    "Push \"citizens\"",
+    "Push [{ \"voted\":False, \"voted_for\":-1 },]",
+    "LoadVar m",
+    "DelVar m",
+    "2-ary *",
+    "3-ary DictAdd",
+    "StoreVar result",
+    "Return",
+    "Jump 253",
+    "Frame vote(election, candidate, citizen)",
+    "DelVar result",
+    "AtomicInc(lazy)",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar citizen",
+    "Address",
+    "Push \"voted\"",
+    "Address",
+    "Load",
+    "JumpCond False 38",
+    "DelVar candidate",
+    "DelVar citizen",
+    "DelVar election",
+    "Push False",
+    "StoreVar result",
+    "Jump 71",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar citizen",
+    "Address",
+    "Push \"voted\"",
+    "Address",
+    "Push False",
+    "Store",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar citizen",
+    "DelVar citizen",
+    "Address",
+    "Push \"voted_for\"",
+    "Address",
+    "LoadVar candidate",
+    "Store",
+    "LoadVar election",
+    "DelVar election",
+    "Push \"candidates\"",
+    "Address",
+    "LoadVar candidate",
+    "DelVar candidate",
+    "Address",
+    "Dup",
+    "Load",
+    "Push 1",
+    "2-ary +",
+    "Store",
+    "Push True",
+    "StoreVar result",
+    "AtomicDec",
+    "Return",
+    "Jump 253",
+    "Frame withdraw(election, citizen)",
+    "DelVar result",
+    "AtomicInc(lazy)",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar citizen",
+    "Address",
+    "Push \"voted\"",
+    "Address",
+    "Load",
+    "JumpCond False 119",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar citizen",
+    "Address",
+    "Push \"voted\"",
+    "Address",
+    "Push False",
+    "Store",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar citizen",
+    "DelVar citizen",
+    "Address",
+    "Push \"voted_for\"",
+    "Address",
+    "Push -1",
+    "Store",
+    "LoadVar election",
+    "DelVar election",
+    "Push \"candidates\"",
+    "Address",
+    "Load candidate",
+    "Address",
+    "Dup",
+    "Load",
+    "Push 1",
+    "2-ary -",
+    "Store",
+    "Push True",
+    "StoreVar result",
+    "Jump 123",
+    "DelVar citizen",
+    "DelVar election",
+    "Push False",
+    "StoreVar result",
+    "AtomicDec",
+    "Return",
+    "Jump 253",
+    "Frame get_votes(election, candidate)",
+    "DelVar result",
+    "AtomicInc(lazy)",
+    "LoadVar election",
+    "DelVar election",
+    "Push \"candidates\"",
+    "Address",
+    "LoadVar candidate",
+    "DelVar candidate",
+    "Address",
+    "Load",
+    "StoreVar result",
+    "AtomicDec",
+    "Return",
+    "Jump 253",
+    "Frame transfer(election, candidate_from, candidate_to)",
+    "AtomicInc(lazy)",
+    "LoadVar election",
+    "Push \"candidates\"",
+    "Address",
+    "LoadVar candidate_to",
+    "Address",
+    "Dup",
+    "Load",
+    "LoadVar election",
+    "Push \"candidates\"",
+    "Address",
+    "LoadVar candidate_from",
+    "Address",
+    "Load",
+    "2-ary +",
+    "Store",
+    "LoadVar election",
+    "Push \"candidates\"",
+    "Address",
+    "LoadVar candidate_from",
+    "Address",
+    "Push 0",
+    "Store",
+    "Push 0",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "Load",
+    "1-ary len",
+    "2-ary ..",
+    "Push 0",
+    "Cut(i)",
+    "JumpCond False 198",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar i",
+    "Address",
+    "Push \"voted_for\"",
+    "Address",
+    "Load",
+    "LoadVar candidate_from",
+    "2-ary ==",
+    "JumpCond False 196",
+    "LoadVar election",
+    "Push \"citizens\"",
+    "Address",
+    "LoadVar i",
+    "DelVar i",
+    "Address",
+    "Push \"voted_for\"",
+    "Address",
+    "LoadVar candidate_to",
+    "Store",
+    "DelVar i",
+    "Jump 173",
+    "DelVar candidate_from",
+    "DelVar candidate_to",
+    "DelVar election",
+    "DelVar i",
+    "AtomicDec",
+    "Return",
+    "Jump 253",
+    "Frame winner(election)",
+    "DelVar result",
+    "AtomicInc(lazy)",
+    "Push -1",
+    "StoreVar winner",
+    "Push 0",
+    "StoreVar winner_count",
+    "Push 0",
+    "LoadVar election",
+    "Push \"candidates\"",
+    "Address",
+    "Load",
+    "1-ary len",
+    "2-ary ..",
+    "Push 0",
+    "Cut(i)",
+    "JumpCond False 245",
+    "LoadVar election",
+    "Push \"candidates\"",
+    "Address",
+    "LoadVar i",
+    "Address",
+    "Load",
+    "LoadVar winner_count",
+    "2-ary >",
+    "JumpCond False 243",
+    "DelVar winner",
+    "DelVar winner_count",
+    "LoadVar election",
+    "Push \"candidates\"",
+    "Address",
+    "LoadVar i",
+    "Address",
+    "Load",
+    "StoreVar winner_count",
+    "LoadVar i",
+    "DelVar i",
+    "StoreVar winner",
+    "DelVar i",
+    "Jump 220",
+    "DelVar election",
+    "DelVar i",
+    "DelVar winner_count",
+    "LoadVar winner",
+    "DelVar winner",
+    "StoreVar result",
+    "AtomicDec",
+    "Return",
+    "Return",
+    "DelVar result"
+  ],
+  "explain": [
+    "start of method __init__",
+    "jump over method definition: set program counter to 253",
+    "start of method Election",
+    "delete method variable result",
+    "push constant {:}",
+    "push constant \"candidates\"",
+    "push constant [0,]",
+    "push the value of n",
+    "delete method variable n",
+    "pop 2 values and push the result of applying *",
+    "pop 3 values and push the result of applying DictAdd",
+    "push constant \"citizens\"",
+    "push constant [{ \"voted\":False, \"voted_for\":-1 },]",
+    "push the value of m",
+    "delete method variable m",
+    "pop 2 values and push the result of applying *",
+    "pop 3 values and push the result of applying DictAdd",
+    "pop a value and store in result",
+    "restore caller method state and push result",
+    "jump over method definition: set program counter to 253",
+    "start of method vote",
+    "delete method variable result",
+    "increment atomic counter of context; thread runs uninterrupted if larger than 0",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of citizen",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted\"",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "pop a value and jump to 38 if the value is False",
+    "delete method variable candidate",
+    "delete method variable citizen",
+    "delete method variable election",
+    "push constant False",
+    "pop a value and store in result",
+    "set program counter to 71",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of citizen",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant False",
+    "pop a value and an address and store the value at the address",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of citizen",
+    "delete method variable citizen",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted_for\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of candidate",
+    "pop a value and an address and store the value at the address",
+    "push the value of election",
+    "delete method variable election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of candidate",
+    "delete method variable candidate",
+    "combine the top two values on the stack into an address and push the result",
+    "push a copy of the top value on the stack",
+    "pop an address and push the value at the address",
+    "push constant 1",
+    "pop 2 values and push the result of applying +",
+    "pop a value and an address and store the value at the address",
+    "push constant True",
+    "pop a value and store in result",
+    "decrement atomic counter of context",
+    "restore caller method state and push result",
+    "jump over method definition: set program counter to 253",
+    "start of method withdraw",
+    "delete method variable result",
+    "increment atomic counter of context; thread runs uninterrupted if larger than 0",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of citizen",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted\"",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "pop a value and jump to 119 if the value is False",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of citizen",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant False",
+    "pop a value and an address and store the value at the address",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of citizen",
+    "delete method variable citizen",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted_for\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant -1",
+    "pop a value and an address and store the value at the address",
+    "push the value of election",
+    "delete method variable election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push value of shared variable candidate",
+    "combine the top two values on the stack into an address and push the result",
+    "push a copy of the top value on the stack",
+    "pop an address and push the value at the address",
+    "push constant 1",
+    "pop 2 values and push the result of applying -",
+    "pop a value and an address and store the value at the address",
+    "push constant True",
+    "pop a value and store in result",
+    "set program counter to 123",
+    "delete method variable citizen",
+    "delete method variable election",
+    "push constant False",
+    "pop a value and store in result",
+    "decrement atomic counter of context",
+    "restore caller method state and push result",
+    "jump over method definition: set program counter to 253",
+    "start of method get_votes",
+    "delete method variable result",
+    "increment atomic counter of context; thread runs uninterrupted if larger than 0",
+    "push the value of election",
+    "delete method variable election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of candidate",
+    "delete method variable candidate",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "pop a value and store in result",
+    "decrement atomic counter of context",
+    "restore caller method state and push result",
+    "jump over method definition: set program counter to 253",
+    "start of method transfer",
+    "increment atomic counter of context; thread runs uninterrupted if larger than 0",
+    "push the value of election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of candidate_to",
+    "combine the top two values on the stack into an address and push the result",
+    "push a copy of the top value on the stack",
+    "pop an address and push the value at the address",
+    "push the value of election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of candidate_from",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "pop 2 values and push the result of applying +",
+    "pop a value and an address and store the value at the address",
+    "push the value of election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of candidate_from",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant 0",
+    "pop a value and an address and store the value at the address",
+    "push constant 0",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "pop 1 value and push the result of applying len",
+    "pop 2 values and push the result of applying ..",
+    "push constant 0",
+    "get next element and assign to i; push False or True depending on success",
+    "check if loop is done: pop a value and jump to 198 if the value is False",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of i",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted_for\"",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "push the value of candidate_from",
+    "pop 2 values and push the result of applying ==",
+    "pop a value and jump to 196 if the value is False",
+    "push the value of election",
+    "push constant \"citizens\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of i",
+    "delete method variable i",
+    "combine the top two values on the stack into an address and push the result",
+    "push constant \"voted_for\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of candidate_to",
+    "pop a value and an address and store the value at the address",
+    "delete method variable i",
+    "set program counter to 173",
+    "delete method variable candidate_from",
+    "delete method variable candidate_to",
+    "delete method variable election",
+    "delete method variable i",
+    "decrement atomic counter of context",
+    "restore caller method state and push result",
+    "jump over method definition: set program counter to 253",
+    "start of method winner",
+    "delete method variable result",
+    "increment atomic counter of context; thread runs uninterrupted if larger than 0",
+    "push constant -1",
+    "pop a value and store in winner",
+    "push constant 0",
+    "pop a value and store in winner_count",
+    "push constant 0",
+    "push the value of election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "pop 1 value and push the result of applying len",
+    "pop 2 values and push the result of applying ..",
+    "push constant 0",
+    "get next element and assign to i; push False or True depending on success",
+    "check if loop is done: pop a value and jump to 245 if the value is False",
+    "push the value of election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of i",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "push the value of winner_count",
+    "pop 2 values and push the result of applying >",
+    "pop a value and jump to 243 if the value is False",
+    "delete method variable winner",
+    "delete method variable winner_count",
+    "push the value of election",
+    "push constant \"candidates\"",
+    "combine the top two values on the stack into an address and push the result",
+    "push the value of i",
+    "combine the top two values on the stack into an address and push the result",
+    "pop an address and push the value at the address",
+    "pop a value and store in winner_count",
+    "push the value of i",
+    "delete method variable i",
+    "pop a value and store in winner",
+    "delete method variable i",
+    "set program counter to 220",
+    "delete method variable election",
+    "delete method variable i",
+    "delete method variable winner_count",
+    "push the value of winner",
+    "delete method variable winner",
+    "pop a value and store in result",
+    "decrement atomic counter of context",
+    "restore caller method state and push result",
+    "restore caller method state and push result",
+    "delete method variable result"
+  ],
+  "locations": {
+    "115": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "46", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "209": { "file": "election.hny", "line": "39", "column": "9", "endline": "39", "endcolumn": "23", "stmt": [39,9,39,23], "code": "        var winner = -1;" },
+    "193": { "file": "election.hny", "line": "35", "column": "17", "endline": "35", "endcolumn": "47", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "72": { "file": "election.hny", "line": "4", "column": "1", "endline": "4", "endcolumn": "39", "stmt": [4,1,4,39], "code": "def vote(election, candidate, citizen):" },
+    "143": { "file": "election.hny", "line": "31", "column": "9", "endline": "31", "endcolumn": "16", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "43": { "file": "election.hny", "line": "9", "column": "38", "endline": "9", "endcolumn": "43", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "50": { "file": "election.hny", "line": "10", "column": "30", "endline": "10", "endcolumn": "36", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "188": { "file": "election.hny", "line": "35", "column": "17", "endline": "35", "endcolumn": "34", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "62": { "file": "election.hny", "line": "11", "column": "32", "endline": "11", "endcolumn": "40", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "42": { "file": "election.hny", "line": "9", "column": "11", "endline": "9", "endcolumn": "37", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "128": { "file": "election.hny", "line": "26", "column": "5", "endline": "26", "endcolumn": "14", "stmt": [26,5,26,15], "code": "    atomically:" },
+    "114": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "48", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "178": { "file": "election.hny", "line": "34", "column": "35", "endline": "34", "endcolumn": "35", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "208": { "file": "election.hny", "line": "39", "column": "22", "endline": "39", "endcolumn": "23", "stmt": [39,9,39,23], "code": "        var winner = -1;" },
+    "2": { "file": "election.hny", "line": "1", "column": "1", "endline": "1", "endcolumn": "18", "stmt": [1,1,1,18], "code": "def Election(n,m):" },
+    "51": { "file": "election.hny", "line": "10", "column": "30", "endline": "10", "endcolumn": "36", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "3": { "file": "election.hny", "line": "2", "column": "15", "endline": "2", "endcolumn": "80", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "12": { "file": "election.hny", "line": "2", "column": "46", "endline": "2", "endcolumn": "77", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "56": { "file": "election.hny", "line": "10", "column": "11", "endline": "10", "endcolumn": "49", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "71": { "file": "election.hny", "line": "5", "column": "5", "endline": "5", "endcolumn": "15", "stmt": [5,5,5,15], "code": "    atomically:" },
+    "9": { "file": "election.hny", "line": "2", "column": "27", "endline": "2", "endcolumn": "32", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "119": { "file": "election.hny", "line": "22", "column": "22", "endline": "22", "endcolumn": "26", "stmt": [22,13,22,26], "code": "            result = False" },
+    "111": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "48", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "41": { "file": "election.hny", "line": "9", "column": "30", "endline": "9", "endcolumn": "36", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "8": { "file": "election.hny", "line": "2", "column": "32", "endline": "2", "endcolumn": "32", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "61": { "file": "election.hny", "line": "11", "column": "32", "endline": "11", "endcolumn": "40", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "13": { "file": "election.hny", "line": "2", "column": "80", "endline": "2", "endcolumn": "80", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "229": { "file": "election.hny", "line": "42", "column": "16", "endline": "42", "endcolumn": "53", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "163": { "file": "election.hny", "line": "32", "column": "48", "endline": "32", "endcolumn": "48", "stmt": [32,9,32,48], "code": "        election->candidates[candidate_from] = 0" },
+    "112": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "48", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "52": { "file": "election.hny", "line": "10", "column": "11", "endline": "10", "endcolumn": "37", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "63": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "41", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "73": { "file": "election.hny", "line": "14", "column": "1", "endline": "14", "endcolumn": "3", "stmt": [14,1,14,32], "code": "def withdraw(election, citizen):" },
+    "11": { "file": "election.hny", "line": "2", "column": "35", "endline": "2", "endcolumn": "43", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "40": { "file": "election.hny", "line": "9", "column": "11", "endline": "9", "endcolumn": "28", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "158": { "file": "election.hny", "line": "32", "column": "9", "endline": "32", "endcolumn": "16", "stmt": [32,9,32,48], "code": "        election->candidates[candidate_from] = 0" },
+    "53": { "file": "election.hny", "line": "10", "column": "38", "endline": "10", "endcolumn": "47", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "228": { "file": "election.hny", "line": "42", "column": "42", "endline": "42", "endcolumn": "53", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "10": { "file": "election.hny", "line": "2", "column": "15", "endline": "2", "endcolumn": "80", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "110": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "43", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "70": { "file": "election.hny", "line": "12", "column": "11", "endline": "12", "endcolumn": "18", "stmt": [12,11,12,23], "code": "          result = True" },
+    "116": { "file": "election.hny", "line": "20", "column": "22", "endline": "20", "endcolumn": "25", "stmt": [20,13,20,25], "code": "            result = True" },
+    "60": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "30", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "108": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "32", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "117": { "file": "election.hny", "line": "20", "column": "13", "endline": "20", "endcolumn": "20", "stmt": [20,13,20,25], "code": "            result = True" },
+    "194": { "file": "election.hny", "line": "35", "column": "51", "endline": "35", "endcolumn": "62", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "67": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "46", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "20": { "file": "election.hny", "line": "4", "column": "1", "endline": "4", "endcolumn": "39", "stmt": [4,1,4,39], "code": "def vote(election, candidate, citizen):" },
+    "109": { "file": "election.hny", "line": "19", "column": "34", "endline": "19", "endcolumn": "42", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "227": { "file": "election.hny", "line": "42", "column": "16", "endline": "42", "endcolumn": "38", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "126": { "file": "election.hny", "line": "25", "column": "1", "endline": "25", "endcolumn": "35", "stmt": [25,1,25,35], "code": "def get_votes(election, candidate):" },
+    "226": { "file": "election.hny", "line": "42", "column": "16", "endline": "42", "endcolumn": "38", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "235": { "file": "election.hny", "line": "43", "column": "32", "endline": "43", "endcolumn": "51", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "4": { "file": "election.hny", "line": "2", "column": "15", "endline": "2", "endcolumn": "80", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "134": { "file": "election.hny", "line": "27", "column": "39", "endline": "27", "endcolumn": "47", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "30": { "file": "election.hny", "line": "6", "column": "10", "endline": "6", "endcolumn": "42", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "201": { "file": "election.hny", "line": "30", "column": "5", "endline": "30", "endcolumn": "15", "stmt": [30,5,30,15], "code": "    atomically:" },
+    "186": { "file": "election.hny", "line": "35", "column": "17", "endline": "35", "endcolumn": "24", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "7": { "file": "election.hny", "line": "2", "column": "32", "endline": "2", "endcolumn": "32", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "127": { "file": "election.hny", "line": "26", "column": "5", "endline": "26", "endcolumn": "14", "stmt": [26,5,26,15], "code": "    atomically:" },
+    "180": { "file": "election.hny", "line": "34", "column": "37", "endline": "34", "endcolumn": "46", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "224": { "file": "election.hny", "line": "42", "column": "16", "endline": "42", "endcolumn": "35", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "187": { "file": "election.hny", "line": "35", "column": "27", "endline": "35", "endcolumn": "34", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "232": { "file": "election.hny", "line": "43", "column": "32", "endline": "43", "endcolumn": "39", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "195": { "file": "election.hny", "line": "35", "column": "17", "endline": "35", "endcolumn": "49", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "200": { "file": "election.hny", "line": "30", "column": "5", "endline": "30", "endcolumn": "15", "stmt": [30,5,30,15], "code": "    atomically:" },
+    "113": { "file": "election.hny", "line": "19", "column": "48", "endline": "19", "endcolumn": "48", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "120": { "file": "election.hny", "line": "22", "column": "22", "endline": "22", "endcolumn": "26", "stmt": [22,13,22,26], "code": "            result = False" },
+    "6": { "file": "election.hny", "line": "2", "column": "28", "endline": "2", "endcolumn": "29", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "233": { "file": "election.hny", "line": "43", "column": "32", "endline": "43", "endcolumn": "39", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "211": { "file": "election.hny", "line": "40", "column": "9", "endline": "40", "endcolumn": "28", "stmt": [40,9,40,28], "code": "        var winner_count = 0;" },
+    "85": { "file": "election.hny", "line": "16", "column": "9", "endline": "16", "endcolumn": "10", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "135": { "file": "election.hny", "line": "27", "column": "18", "endline": "27", "endcolumn": "48", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "181": { "file": "election.hny", "line": "34", "column": "16", "endline": "34", "endcolumn": "46", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "234": { "file": "election.hny", "line": "43", "column": "42", "endline": "43", "endcolumn": "51", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "47": { "file": "election.hny", "line": "10", "column": "11", "endline": "10", "endcolumn": "18", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "17": { "file": "election.hny", "line": "2", "column": "5", "endline": "2", "endcolumn": "12", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "139": { "file": "election.hny", "line": "25", "column": "1", "endline": "25", "endcolumn": "35", "stmt": [25,1,25,35], "code": "def get_votes(election, candidate):" },
+    "77": { "file": "election.hny", "line": "16", "column": "12", "endline": "16", "endcolumn": "19", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "237": { "file": "election.hny", "line": "43", "column": "32", "endline": "43", "endcolumn": "54", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "22": { "file": "election.hny", "line": "5", "column": "5", "endline": "5", "endcolumn": "14", "stmt": [5,5,5,15], "code": "    atomically:" },
+    "236": { "file": "election.hny", "line": "43", "column": "53", "endline": "43", "endcolumn": "53", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "32": { "file": "election.hny", "line": "7", "column": "20", "endline": "7", "endcolumn": "24", "stmt": [7,11,7,24], "code": "          result = False" },
+    "199": { "file": "election.hny", "line": "30", "column": "5", "endline": "30", "endcolumn": "15", "stmt": [30,5,30,15], "code": "    atomically:" },
+    "122": { "file": "election.hny", "line": "22", "column": "13", "endline": "22", "endcolumn": "20", "stmt": [22,13,22,26], "code": "            result = False" },
+    "0": { "file": "election.hny", "line": "1", "column": "1", "endline": "46", "endcolumn": "6", "stmt": [1,1,46,6], "code": "def Election(n,m):" },
+    "15": { "file": "election.hny", "line": "2", "column": "45", "endline": "2", "endcolumn": "80", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "137": { "file": "election.hny", "line": "27", "column": "9", "endline": "27", "endcolumn": "16", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "205": { "file": "election.hny", "line": "37", "column": "1", "endline": "37", "endcolumn": "21", "stmt": [37,1,37,21], "code": "def winner(election):" },
+    "103": { "file": "election.hny", "line": "18", "column": "53", "endline": "18", "endcolumn": "54", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "39": { "file": "election.hny", "line": "9", "column": "21", "endline": "9", "endcolumn": "28", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "197": { "file": "election.hny", "line": "33", "column": "47", "endline": "33", "endcolumn": "47", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "218": { "file": "election.hny", "line": "41", "column": "19", "endline": "41", "endcolumn": "48", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "29": { "file": "election.hny", "line": "6", "column": "10", "endline": "6", "endcolumn": "42", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "182": { "file": "election.hny", "line": "34", "column": "16", "endline": "34", "endcolumn": "46", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "82": { "file": "election.hny", "line": "16", "column": "39", "endline": "16", "endcolumn": "44", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "190": { "file": "election.hny", "line": "35", "column": "36", "endline": "35", "endcolumn": "36", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "231": { "file": "election.hny", "line": "43", "column": "32", "endline": "43", "endcolumn": "39", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "121": { "file": "election.hny", "line": "22", "column": "22", "endline": "22", "endcolumn": "26", "stmt": [22,13,22,26], "code": "            result = False" },
+    "92": { "file": "election.hny", "line": "17", "column": "13", "endline": "17", "endcolumn": "45", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "130": { "file": "election.hny", "line": "27", "column": "18", "endline": "27", "endcolumn": "25", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "1": { "file": "election.hny", "line": "1", "column": "1", "endline": "1", "endcolumn": "3", "stmt": [1,1,1,18], "code": "def Election(n,m):" },
+    "230": { "file": "election.hny", "line": "42", "column": "13", "endline": "42", "endcolumn": "14", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "196": { "file": "election.hny", "line": "33", "column": "47", "endline": "33", "endcolumn": "47", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "57": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "18", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "219": { "file": "election.hny", "line": "41", "column": "9", "endline": "41", "endcolumn": "11", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "136": { "file": "election.hny", "line": "27", "column": "18", "endline": "27", "endcolumn": "48", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "129": { "file": "election.hny", "line": "27", "column": "18", "endline": "27", "endcolumn": "25", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "131": { "file": "election.hny", "line": "27", "column": "28", "endline": "27", "endcolumn": "37", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "99": { "file": "election.hny", "line": "18", "column": "32", "endline": "18", "endcolumn": "38", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "207": { "file": "election.hny", "line": "38", "column": "5", "endline": "38", "endcolumn": "14", "stmt": [38,5,38,15], "code": "    atomically:" },
+    "191": { "file": "election.hny", "line": "35", "column": "17", "endline": "35", "endcolumn": "37", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "5": { "file": "election.hny", "line": "2", "column": "15", "endline": "2", "endcolumn": "25", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "202": { "file": "election.hny", "line": "30", "column": "5", "endline": "30", "endcolumn": "15", "stmt": [30,5,30,15], "code": "    atomically:" },
+    "75": { "file": "election.hny", "line": "15", "column": "5", "endline": "15", "endcolumn": "14", "stmt": [15,5,15,15], "code": "    atomically:" },
+    "125": { "file": "election.hny", "line": "25", "column": "1", "endline": "25", "endcolumn": "3", "stmt": [25,1,25,35], "code": "def get_votes(election, candidate):" },
+    "203": { "file": "election.hny", "line": "29", "column": "1", "endline": "29", "endcolumn": "53", "stmt": [29,1,29,53], "code": "def transfer(election, candidate_from, candidate_to):" },
+    "189": { "file": "election.hny", "line": "35", "column": "36", "endline": "35", "endcolumn": "36", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "185": { "file": "election.hny", "line": "34", "column": "13", "endline": "34", "endcolumn": "14", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "65": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "46", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "206": { "file": "election.hny", "line": "38", "column": "5", "endline": "38", "endcolumn": "14", "stmt": [38,5,38,15], "code": "    atomically:" },
+    "184": { "file": "election.hny", "line": "34", "column": "16", "endline": "34", "endcolumn": "64", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "192": { "file": "election.hny", "line": "35", "column": "38", "endline": "35", "endcolumn": "47", "stmt": [35,17,35,62], "code": "                election->citizens[i].voted_for = candidate_to" },
+    "132": { "file": "election.hny", "line": "27", "column": "18", "endline": "27", "endcolumn": "37", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "55": { "file": "election.hny", "line": "10", "column": "51", "endline": "10", "endcolumn": "59", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "45": { "file": "election.hny", "line": "9", "column": "47", "endline": "9", "endcolumn": "51", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "204": { "file": "election.hny", "line": "37", "column": "1", "endline": "37", "endcolumn": "3", "stmt": [37,1,37,21], "code": "def winner(election):" },
+    "124": { "file": "election.hny", "line": "14", "column": "1", "endline": "14", "endcolumn": "32", "stmt": [14,1,14,32], "code": "def withdraw(election, citizen):" },
+    "133": { "file": "election.hny", "line": "27", "column": "39", "endline": "27", "endcolumn": "47", "stmt": [27,9,27,48], "code": "        result = election->candidates[candidate]" },
+    "89": { "file": "election.hny", "line": "17", "column": "32", "endline": "17", "endcolumn": "38", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "150": { "file": "election.hny", "line": "31", "column": "47", "endline": "31", "endcolumn": "54", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "214": { "file": "election.hny", "line": "41", "column": "38", "endline": "41", "endcolumn": "47", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "18": { "file": "election.hny", "line": "1", "column": "1", "endline": "1", "endcolumn": "18", "stmt": [1,1,1,18], "code": "def Election(n,m):" },
+    "100": { "file": "election.hny", "line": "18", "column": "13", "endline": "18", "endcolumn": "39", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "69": { "file": "election.hny", "line": "12", "column": "20", "endline": "12", "endcolumn": "23", "stmt": [12,11,12,23], "code": "          result = True" },
+    "96": { "file": "election.hny", "line": "18", "column": "23", "endline": "18", "endcolumn": "30", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "81": { "file": "election.hny", "line": "16", "column": "12", "endline": "16", "endcolumn": "38", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "79": { "file": "election.hny", "line": "16", "column": "12", "endline": "16", "endcolumn": "29", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "217": { "file": "election.hny", "line": "41", "column": "24", "endline": "41", "endcolumn": "48", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "25": { "file": "election.hny", "line": "6", "column": "10", "endline": "6", "endcolumn": "27", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "91": { "file": "election.hny", "line": "17", "column": "40", "endline": "17", "endcolumn": "45", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "169": { "file": "election.hny", "line": "33", "column": "28", "endline": "33", "endcolumn": "45", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "164": { "file": "election.hny", "line": "32", "column": "9", "endline": "32", "endcolumn": "46", "stmt": [32,9,32,48], "code": "        election->candidates[candidate_from] = 0" },
+    "35": { "file": "election.hny", "line": "7", "column": "20", "endline": "7", "endcolumn": "24", "stmt": [7,11,7,24], "code": "          result = False" },
+    "220": { "file": "election.hny", "line": "41", "column": "9", "endline": "41", "endcolumn": "11", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "49": { "file": "election.hny", "line": "10", "column": "11", "endline": "10", "endcolumn": "28", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "248": { "file": "election.hny", "line": "45", "column": "18", "endline": "45", "endcolumn": "23", "stmt": [45,9,45,23], "code": "        result = winner" },
+    "106": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "20", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "216": { "file": "election.hny", "line": "41", "column": "28", "endline": "41", "endcolumn": "47", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "78": { "file": "election.hny", "line": "16", "column": "22", "endline": "16", "endcolumn": "29", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "152": { "file": "election.hny", "line": "31", "column": "47", "endline": "31", "endcolumn": "66", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "102": { "file": "election.hny", "line": "18", "column": "13", "endline": "18", "endcolumn": "49", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "156": { "file": "election.hny", "line": "31", "column": "9", "endline": "31", "endcolumn": "82", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "68": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "44", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "238": { "file": "election.hny", "line": "43", "column": "32", "endline": "43", "endcolumn": "54", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "173": { "file": "election.hny", "line": "33", "column": "9", "endline": "33", "endcolumn": "11", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "107": { "file": "election.hny", "line": "19", "column": "23", "endline": "19", "endcolumn": "32", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "80": { "file": "election.hny", "line": "16", "column": "31", "endline": "16", "endcolumn": "37", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "157": { "file": "election.hny", "line": "31", "column": "9", "endline": "31", "endcolumn": "45", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "123": { "file": "election.hny", "line": "15", "column": "5", "endline": "15", "endcolumn": "15", "stmt": [15,5,15,15], "code": "    atomically:" },
+    "151": { "file": "election.hny", "line": "31", "column": "57", "endline": "31", "endcolumn": "66", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "249": { "file": "election.hny", "line": "45", "column": "18", "endline": "45", "endcolumn": "23", "stmt": [45,9,45,23], "code": "        result = winner" },
+    "215": { "file": "election.hny", "line": "41", "column": "28", "endline": "41", "endcolumn": "47", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "183": { "file": "election.hny", "line": "34", "column": "51", "endline": "34", "endcolumn": "64", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "239": { "file": "election.hny", "line": "43", "column": "17", "endline": "43", "endcolumn": "30", "stmt": [43,17,43,54], "code": "                winner_count = election->candidates[i]" },
+    "213": { "file": "election.hny", "line": "41", "column": "28", "endline": "41", "endcolumn": "35", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "34": { "file": "election.hny", "line": "7", "column": "20", "endline": "7", "endcolumn": "24", "stmt": [7,11,7,24], "code": "          result = False" },
+    "101": { "file": "election.hny", "line": "18", "column": "40", "endline": "18", "endcolumn": "49", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "24": { "file": "election.hny", "line": "6", "column": "20", "endline": "6", "endcolumn": "27", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "19": { "file": "election.hny", "line": "4", "column": "1", "endline": "4", "endcolumn": "3", "stmt": [4,1,4,39], "code": "def vote(election, candidate, citizen):" },
+    "221": { "file": "election.hny", "line": "41", "column": "9", "endline": "41", "endcolumn": "11", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "90": { "file": "election.hny", "line": "17", "column": "13", "endline": "17", "endcolumn": "39", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "165": { "file": "election.hny", "line": "33", "column": "19", "endline": "33", "endcolumn": "19", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "212": { "file": "election.hny", "line": "41", "column": "19", "endline": "41", "endcolumn": "19", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "48": { "file": "election.hny", "line": "10", "column": "21", "endline": "10", "endcolumn": "28", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "138": { "file": "election.hny", "line": "26", "column": "5", "endline": "26", "endcolumn": "15", "stmt": [26,5,26,15], "code": "    atomically:" },
+    "166": { "file": "election.hny", "line": "33", "column": "28", "endline": "33", "endcolumn": "35", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "148": { "file": "election.hny", "line": "31", "column": "9", "endline": "31", "endcolumn": "82", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "27": { "file": "election.hny", "line": "6", "column": "10", "endline": "6", "endcolumn": "36", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "222": { "file": "election.hny", "line": "42", "column": "16", "endline": "42", "endcolumn": "23", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "198": { "file": "election.hny", "line": "30", "column": "5", "endline": "30", "endcolumn": "15", "stmt": [30,5,30,15], "code": "    atomically:" },
+    "84": { "file": "election.hny", "line": "16", "column": "12", "endline": "16", "endcolumn": "44", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "210": { "file": "election.hny", "line": "40", "column": "28", "endline": "40", "endcolumn": "28", "stmt": [40,9,40,28], "code": "        var winner_count = 0;" },
+    "95": { "file": "election.hny", "line": "18", "column": "13", "endline": "18", "endcolumn": "20", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "37": { "file": "election.hny", "line": "6", "column": "7", "endline": "6", "endcolumn": "43", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "26": { "file": "election.hny", "line": "6", "column": "29", "endline": "6", "endcolumn": "35", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "223": { "file": "election.hny", "line": "42", "column": "26", "endline": "42", "endcolumn": "35", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "105": { "file": "election.hny", "line": "19", "column": "13", "endline": "19", "endcolumn": "20", "stmt": [19,13,19,48], "code": "            election->candidates[candidate] -= 1" },
+    "155": { "file": "election.hny", "line": "31", "column": "47", "endline": "31", "endcolumn": "82", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "154": { "file": "election.hny", "line": "31", "column": "47", "endline": "31", "endcolumn": "82", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "94": { "file": "election.hny", "line": "17", "column": "13", "endline": "17", "endcolumn": "47", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "104": { "file": "election.hny", "line": "18", "column": "13", "endline": "18", "endcolumn": "51", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "225": { "file": "election.hny", "line": "42", "column": "37", "endline": "42", "endcolumn": "37", "stmt": [42,13,42,54], "code": "            if election->candidates[i] > winner_count:" },
+    "59": { "file": "election.hny", "line": "11", "column": "21", "endline": "11", "endcolumn": "30", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "97": { "file": "election.hny", "line": "18", "column": "13", "endline": "18", "endcolumn": "30", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "86": { "file": "election.hny", "line": "17", "column": "13", "endline": "17", "endcolumn": "20", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "36": { "file": "election.hny", "line": "7", "column": "11", "endline": "7", "endcolumn": "18", "stmt": [7,11,7,24], "code": "          result = False" },
+    "87": { "file": "election.hny", "line": "17", "column": "23", "endline": "17", "endcolumn": "30", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "31": { "file": "election.hny", "line": "6", "column": "7", "endline": "6", "endcolumn": "8", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "21": { "file": "election.hny", "line": "5", "column": "5", "endline": "5", "endcolumn": "14", "stmt": [5,5,5,15], "code": "    atomically:" },
+    "159": { "file": "election.hny", "line": "32", "column": "19", "endline": "32", "endcolumn": "28", "stmt": [32,9,32,48], "code": "        election->candidates[candidate_from] = 0" },
+    "250": { "file": "election.hny", "line": "45", "column": "9", "endline": "45", "endcolumn": "16", "stmt": [45,9,45,23], "code": "        result = winner" },
+    "16": { "file": "election.hny", "line": "2", "column": "15", "endline": "2", "endcolumn": "80", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "176": { "file": "election.hny", "line": "34", "column": "26", "endline": "34", "endcolumn": "33", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "245": { "file": "election.hny", "line": "45", "column": "18", "endline": "45", "endcolumn": "23", "stmt": [45,9,45,23], "code": "        result = winner" },
+    "144": { "file": "election.hny", "line": "31", "column": "19", "endline": "31", "endcolumn": "28", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "251": { "file": "election.hny", "line": "38", "column": "5", "endline": "38", "endcolumn": "15", "stmt": [38,5,38,15], "code": "    atomically:" },
+    "242": { "file": "election.hny", "line": "44", "column": "17", "endline": "44", "endcolumn": "24", "stmt": [44,17,44,26], "code": "                winner = i" },
+    "64": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "46", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "44": { "file": "election.hny", "line": "9", "column": "11", "endline": "9", "endcolumn": "43", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "145": { "file": "election.hny", "line": "31", "column": "9", "endline": "31", "endcolumn": "28", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "177": { "file": "election.hny", "line": "34", "column": "16", "endline": "34", "endcolumn": "33", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "161": { "file": "election.hny", "line": "32", "column": "30", "endline": "32", "endcolumn": "43", "stmt": [32,9,32,48], "code": "        election->candidates[candidate_from] = 0" },
+    "162": { "file": "election.hny", "line": "32", "column": "9", "endline": "32", "endcolumn": "44", "stmt": [32,9,32,48], "code": "        election->candidates[candidate_from] = 0" },
+    "170": { "file": "election.hny", "line": "33", "column": "24", "endline": "33", "endcolumn": "46", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "74": { "file": "election.hny", "line": "14", "column": "1", "endline": "14", "endcolumn": "32", "stmt": [14,1,14,32], "code": "def withdraw(election, citizen):" },
+    "243": { "file": "election.hny", "line": "41", "column": "49", "endline": "41", "endcolumn": "49", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "33": { "file": "election.hny", "line": "7", "column": "20", "endline": "7", "endcolumn": "24", "stmt": [7,11,7,24], "code": "          result = False" },
+    "244": { "file": "election.hny", "line": "41", "column": "49", "endline": "41", "endcolumn": "49", "stmt": [41,9,41,49], "code": "        for i in {0 .. len(election->candidates)}:" },
+    "66": { "file": "election.hny", "line": "11", "column": "46", "endline": "11", "endcolumn": "46", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "167": { "file": "election.hny", "line": "33", "column": "38", "endline": "33", "endcolumn": "45", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "76": { "file": "election.hny", "line": "15", "column": "5", "endline": "15", "endcolumn": "14", "stmt": [15,5,15,15], "code": "    atomically:" },
+    "14": { "file": "election.hny", "line": "2", "column": "80", "endline": "2", "endcolumn": "80", "stmt": [2,5,2,81], "code": "    result = {.candidates:[0,]*n, .citizens:[{.voted: False, .voted_for: -1},]*m}" },
+    "160": { "file": "election.hny", "line": "32", "column": "9", "endline": "32", "endcolumn": "28", "stmt": [32,9,32,48], "code": "        election->candidates[candidate_from] = 0" },
+    "118": { "file": "election.hny", "line": "16", "column": "9", "endline": "16", "endcolumn": "45", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "23": { "file": "election.hny", "line": "6", "column": "10", "endline": "6", "endcolumn": "17", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "149": { "file": "election.hny", "line": "31", "column": "9", "endline": "31", "endcolumn": "82", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "58": { "file": "election.hny", "line": "11", "column": "11", "endline": "11", "endcolumn": "18", "stmt": [11,11,11,46], "code": "          election->candidates[candidate] += 1" },
+    "247": { "file": "election.hny", "line": "45", "column": "18", "endline": "45", "endcolumn": "23", "stmt": [45,9,45,23], "code": "        result = winner" },
+    "246": { "file": "election.hny", "line": "45", "column": "18", "endline": "45", "endcolumn": "23", "stmt": [45,9,45,23], "code": "        result = winner" },
+    "46": { "file": "election.hny", "line": "9", "column": "11", "endline": "9", "endcolumn": "45", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "147": { "file": "election.hny", "line": "31", "column": "9", "endline": "31", "endcolumn": "42", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "93": { "file": "election.hny", "line": "17", "column": "49", "endline": "17", "endcolumn": "53", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "140": { "file": "election.hny", "line": "29", "column": "1", "endline": "29", "endcolumn": "3", "stmt": [29,1,29,53], "code": "def transfer(election, candidate_from, candidate_to):" },
+    "241": { "file": "election.hny", "line": "44", "column": "26", "endline": "44", "endcolumn": "26", "stmt": [44,17,44,26], "code": "                winner = i" },
+    "172": { "file": "election.hny", "line": "33", "column": "9", "endline": "33", "endcolumn": "11", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "153": { "file": "election.hny", "line": "31", "column": "68", "endline": "31", "endcolumn": "81", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "240": { "file": "election.hny", "line": "44", "column": "26", "endline": "44", "endcolumn": "26", "stmt": [44,17,44,26], "code": "                winner = i" },
+    "171": { "file": "election.hny", "line": "33", "column": "19", "endline": "33", "endcolumn": "46", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "28": { "file": "election.hny", "line": "6", "column": "37", "endline": "6", "endcolumn": "42", "stmt": [6,7,6,43], "code": "      if election->citizens[citizen].voted:" },
+    "168": { "file": "election.hny", "line": "33", "column": "28", "endline": "33", "endcolumn": "45", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "83": { "file": "election.hny", "line": "16", "column": "12", "endline": "16", "endcolumn": "44", "stmt": [16,9,16,45], "code": "        if election->citizens[citizen].voted:" },
+    "146": { "file": "election.hny", "line": "31", "column": "30", "endline": "31", "endcolumn": "41", "stmt": [31,9,31,82], "code": "        election->candidates[candidate_to] += election->candidates[candidate_from]" },
+    "88": { "file": "election.hny", "line": "17", "column": "13", "endline": "17", "endcolumn": "30", "stmt": [17,13,17,53], "code": "            election->citizens[citizen].voted = False" },
+    "141": { "file": "election.hny", "line": "29", "column": "1", "endline": "29", "endcolumn": "53", "stmt": [29,1,29,53], "code": "def transfer(election, candidate_from, candidate_to):" },
+    "38": { "file": "election.hny", "line": "9", "column": "11", "endline": "9", "endcolumn": "18", "stmt": [9,11,9,51], "code": "          election->citizens[citizen].voted = False" },
+    "252": { "file": "election.hny", "line": "37", "column": "1", "endline": "37", "endcolumn": "21", "stmt": [37,1,37,21], "code": "def winner(election):" },
+    "175": { "file": "election.hny", "line": "34", "column": "16", "endline": "34", "endcolumn": "23", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "253": { "file": "election.hny", "line": "1", "column": "1", "endline": "46", "endcolumn": "6", "stmt": [1,1,46,6], "code": "def Election(n,m):" },
+    "179": { "file": "election.hny", "line": "34", "column": "16", "endline": "34", "endcolumn": "36", "stmt": [34,13,34,65], "code": "            if election->citizens[i].voted_for == candidate_from:" },
+    "54": { "file": "election.hny", "line": "10", "column": "11", "endline": "10", "endcolumn": "47", "stmt": [10,11,10,59], "code": "          election->citizens[citizen].voted_for = candidate" },
+    "98": { "file": "election.hny", "line": "18", "column": "32", "endline": "18", "endcolumn": "38", "stmt": [18,13,18,54], "code": "            election->citizens[citizen].voted_for = -1" },
+    "174": { "file": "election.hny", "line": "33", "column": "9", "endline": "33", "endcolumn": "11", "stmt": [33,9,33,47], "code": "        for i in {0 .. len(election->citizens)}:" },
+    "142": { "file": "election.hny", "line": "30", "column": "5", "endline": "30", "endcolumn": "14", "stmt": [30,5,30,15], "code": "    atomically:" },
+    "254": { "file": "election.hny", "line": "1", "column": "1", "endline": "46", "endcolumn": "6", "stmt": [1,1,46,6], "code": "def Election(n,m):" }
+  }
+}
+
+;
+var boxSize = 10;
+var currentTime = 0;
+var totalTime = 0;
+var microsteps = [];
+var megasteps = []
+var threads = [];
+var curMegaStep = 0;
+var mestable = document.getElementById("mestable");
+var threadtable = document.getElementById("threadtable");
+var coderow = document.getElementById("coderow");
+var hvmrow = document.getElementById("hvmrow");
+var container = document.getElementById('table-scroll');
+var currOffset = 0;
+var currCloc = null;
+
+function drawTimeLine(mes) {
+  var c = mes.canvas.getContext("2d");
+  c.beginPath();
+  c.clearRect(0, 0, mes.canvas.width, mes.canvas.height);
+  var t = mes.startTime;
+  var yboxes = Math.floor((mes.nsteps + 29) / 30);
+  var nsteps = mes.nsteps;
+  for (var y = 0; y < yboxes; y++) {
+    var xboxes = nsteps > 30 ? 30 : nsteps;
+    for (var x = 0; x < xboxes; x++) {
+      c.fillStyle = t < currentTime ? "orange" : "white";
+      c.fillRect(x * boxSize, y * boxSize, boxSize, boxSize);
+      c.rect(x * boxSize, y * boxSize, boxSize, boxSize);
+      c.stroke();
+      t += 1;
+    }
+    nsteps -= xboxes;
+  }
+}
+
+function currentMegaStep() {
+  if (currentTime == totalTime) {
+    return microsteps[currentTime - 1].mesidx;
+  }
+  return microsteps[currentTime].mesidx;
+}
+
+function json_string_list(obj) {
+  var result = "";
+  for (var i = 0; i < obj.length; i++) {
+    if (result != "") {
+      result += ", ";
+    }
+    result += json_string(obj[i]);
+  }
+  return "[ " + result + " ]";
+}
+
+function json_string_set(obj) {
+  var result = "";
+  for (var i = 0; i < obj.length; i++) {
+    if (result != "") {
+      result += ", ";
+    }
+    result += json_string(obj[i]);
+  }
+  return "{ " + result + " }";
+}
+
+function json_string_dict(obj) {
+  if (obj.length == 0) {
+    return "{:}"
+  }
+
+  var islist = true;
+  for (var i = 0; i < obj.length; i++) {
+    if (obj[i].key.type != "int" || obj[i].key.value != i.toString()) {
+      islist = false;
+      break;
+    }
+  }
+
+  var result = "";
+  if (islist) {
+    for (var i = 0; i < obj.length; i++) {
+      if (i != 0) {
+        result += ", ";
+      }
+      result += json_string(obj[i].value);
+    }
+    if (obj.length == 1) {
+      result += ",";
+    }
+    return "[" + result + "]";
+  }
+
+  for (var i = 0; i < obj.length; i++) {
+    if (result != "") {
+      result += ", ";
+    }
+    var kv = obj[i];
+    var k = json_string(kv.key);
+    var v = json_string(kv.value);
+    result += k + ": " + v;
+  }
+  return "{ " + result + " }";
+}
+
+function json_string_address(obj) {
+  if (obj.length == 0) {
+    return "None";
+  }
+  var result = "?" + obj[0].value;
+  for (var i = 1; i < obj.length; i++) {
+    result += "[" + json_string(obj[i]) + "]";
+  }
+  return result;
+}
+
+function json_string_context(obj) {
+  var pc = json_string(obj.pc);
+  return "CTX(" + pc + ")";
+}
+
+function json_string(obj) {
+  switch (obj.type) {
+  case "bool": case "int":
+    return obj.value;
+    break;
+  case "atom":
+    return '"' + obj.value + '"';
+  case "set":
+    return json_string_set(obj.value);
+  case "list":
+    return json_string_list(obj.value);
+  case "dict":
+    return json_string_dict(obj.value);
+  case "pc":
+    return "PC(" + obj.value + ")"
+  case "address":
+    return json_string_address(obj.value);
+  case "context":
+    return json_string_context(obj.value);
+  default:
+    return JSON.stringify(obj);
+  }
+}
+
+function stringify_vars(obj) {
+  var result = "";
+  for (var k in obj) {
+    if (k == "result" && obj[k].type == "address" && obj[k].value.length == 0) {
+      continue;
+    }
+    if (result != "") {
+      result += ", ";
+    }
+    result += k + ": " + json_string(obj[k]);
+  }
+  return result;
+}
+
+function convert_var(obj) {
+  if (obj.type != "dict") {
+    return json_string(obj);
+  }
+  if (obj.value.length == 0) {
+    return "";
+  }
+  var result = {};
+  for (var i = 0; i < obj.value.length; i++) {
+    var kv = obj.value[i];
+    var k = json_string(kv.key);      // TODO.  convert_var???
+    result[k] = convert_var(kv.value);
+  }
+  return result;
+}
+
+function convert_vars(obj) {
+  var result = {};
+  for (var k in obj) {
+    result[k] = convert_var(obj[k]);
+  }
+  return result;
+}
+
+function stackTrace(tid, trace, failure) {
+  var table = threads[tid].tracetable;
+  table.innerHTML = "";
+  if (trace.length == 0) {
+    var row = table.insertRow();
+    var mcell = row.insertCell();
+    mcell.innerHTML = threads[tid].name;
+  }
+  for (var i = 0; i < trace.length; i++) {
+    var row = table.insertRow();
+
+    var mcell = row.insertCell();
+    mcell.innerHTML = trace[i].method;
+    switch (trace[i].calltype) {
+    case "process":
+        mcell.style.color = "blue";
+        break;
+    case "normal":
+        mcell.style.color = "black";
+        break;
+    case "interrupt":
+        mcell.style.color = "orange";
+        break;
+    default:
+        mcell.style.color = "red";
+    }
+
+    var vcell = row.insertCell();
+    var vtext = document.createTextNode(stringify_vars(trace[i].vars));
+    vcell.appendChild(vtext);
+  }
+  if (failure != null) {
+    var row = table.insertRow();
+    var fcell = row.insertCell();
+    fcell.innerHTML = failure;
+    fcell.colSpan = 2;
+    fcell.style.color = "red";
+  }
+}
+
+function addToLog(step, entry) {
+  var table = megasteps[step].log;
+  var row = table.insertRow();
+  var mcell = row.insertCell();
+  mcell.innerHTML = entry;
+}
+
+function handleClick(e, mesIdx) {
+  var x = Math.floor(e.offsetX / boxSize);
+  var y = Math.floor(e.offsetY / boxSize);
+  currentTime = megasteps[mesIdx].startTime + y*30 + x + 1;
+  run_microsteps()
+}
+
+var noloc = { file: "", line: "", code: "" };
+
+function getCode(pc) {
+  var locs = state.locations;
+  while (pc >= 0) {
+    s = "" + pc;
+    if (locs.hasOwnProperty(s)) {
+      return locs[s];
+    }
+    pc--;
+  }
+  return noloc;
+}
+
+function handleKeyPress(e) {
+  switch (e.key) {
+    case '0':
+      currentTime = 0;
+      run_microsteps();
+      break;
+    case 'ArrowLeft':
+      if (currentTime > 0) {
+        currentTime -= 1;
+      }
+      run_microsteps();
+      break;
+    case 'ArrowRight':
+      if (currentTime < totalTime) {
+        currentTime += 1;
+      }
+      run_microsteps();
+      break;
+    case 'ArrowUp':
+      var mesidx = currentMegaStep();
+      var mes = megasteps[mesidx];
+      if (currentTime == mes.startTime && mesidx > 0) {
+          mes = megasteps[mesidx - 1];
+      }
+      currentTime = mes.startTime;
+      run_microsteps();
+      break;
+    case 'ArrowDown':
+      var mesidx = currentMegaStep();
+      var mes = megasteps[mesidx];
+      currentTime = mes.startTime + mes.nsteps;
+      if (currentTime > totalTime) {
+        currentTime = totalTime;
+      }
+      run_microsteps();
+      break;
+    case 'Enter':
+      if (currentTime < totalTime) {
+        var cloc = getCode(microsteps[currentTime].pc);
+        while (++currentTime < totalTime) {
+          var nloc = getCode(microsteps[currentTime].pc);
+          if (nloc.file != cloc.file || nloc.line != cloc.line || nloc.code != cloc.code) {
+            break;
+          }
+        }
+        run_microsteps();
+      }
+      break;
+    default:
+      // alert("unknown key " + e.code);
+  }
+}
+
+function init_microstep(masidx, misidx) {
+  var mas = state.macrosteps[masidx];
+  var mis = mas.microsteps[misidx];
+  var t = microsteps.length;
+  if (t > 0 && microsteps[t - 1].tid != mas.tid) {
+    curMegaStep++;
+    megasteps[curMegaStep].startTime = t;
+  }
+  var mes = megasteps[curMegaStep];
+  mes.nsteps++;
+  microsteps[t] = {
+    mesidx: curMegaStep,
+    masidx: masidx,
+    misidx: misidx,
+    tid: parseInt(mas.tid),
+    pc: parseInt(mis.pc),
+    invfails: misidx == mas.microsteps.length - 1 ? mas.invfails : [],
+    contexts: mas.contexts,
+    hvm: mis.code,
+    explain: mis.explain
+  };
+  if (misidx == 0) {
+    ctx = mas.context;
+    previous = { mode: ctx.mode, };
+    if (ctx.hasOwnProperty("atomic")) {
+      previous.atomic = ctx["atomic"];
+    }
+    else {
+      previous.atomic = 0;
+    }
+    if (ctx.hasOwnProperty("readonly")) {
+      previous.readonly = ctx["readonly"];
+    }
+    else {
+      previous.readonly = 0;
+    }
+    if (ctx.hasOwnProperty("interruptlevel")) {
+      previous.interruptlevel = ctx["interruptlevel"];
+    }
+    else {
+      previous.interruptlevel = 0;
+    }
+    if (ctx.hasOwnProperty("trace")) {
+      previous.trace = ctx.trace;
+    }
+    else {
+      previous.trace = [];
+    }
+    if (ctx.hasOwnProperty("fp")) {
+      previous.fp = ctx.fp;
+    }
+    else {
+      previous.fp = 0;
+    }
+    if (ctx.hasOwnProperty("stack")) {
+      previous.stack = ctx.stack.map(x => json_string(x));
+    }
+    else {
+      previous.stack = [];
+    }
+    if (mas.hasOwnProperty("shared")) {
+      previous.shared = convert_vars(mas.shared);
+    }
+    else {
+      previous.shared = {};
+    }
+  }
+  else {
+    previous = microsteps[t-1];
+  }
+
+  if (mis.hasOwnProperty("npc")) {
+    microsteps[t].npc = mis.npc;
+  }
+  else {
+    microsteps[t].npc = mis.pc;
+  }
+
+  microsteps[t].code = getCode(microsteps[t].npc);
+
+  microsteps[t].cloc = document.getElementById('C' + microsteps[t].npc);
+  var npc = microsteps[t].npc - 4;
+  if (npc < 0) {
+    npc = 0;
+  }
+  microsteps[t].offset = document.getElementById('P' + npc);
+
+  if (mis.hasOwnProperty("mode")) {
+    microsteps[t].mode = mis.mode;
+  }
+  else {
+    microsteps[t].mode = previous.mode;
+  }
+
+  if (mis.hasOwnProperty("atomic")) {
+    microsteps[t].atomic = mis["atomic"];
+  }
+  else {
+    microsteps[t].atomic = previous.atomic;
+  }
+
+  if (mis.hasOwnProperty("readonly")) {
+    microsteps[t].readonly = mis["readonly"];
+  }
+  else {
+    microsteps[t].readonly = previous.readonly;
+  }
+
+  if (mis.hasOwnProperty("interruptlevel")) {
+    microsteps[t].interruptlevel = mis["interruptlevel"];
+  }
+  else {
+    microsteps[t].interruptlevel = previous.interruptlevel;
+  }
+
+  if (mis.hasOwnProperty("choose")) {
+    microsteps[t].choose = "chose " + json_string(mis["choose"]);
+  }
+  else {
+    microsteps[t].choose = null;
+  }
+  if (mis.hasOwnProperty("print")) {
+    microsteps[t].print = json_string(mis["print"]);
+  }
+  else {
+    microsteps[t].print = null;
+  }
+
+  if (mis.hasOwnProperty("failure")) {
+    microsteps[t].failure = mis.failure;
+    microsteps[t].cloc = null;
+  }
+  else {
+    microsteps[t].failure = null;
+  }
+
+  if (mis.hasOwnProperty("trace")) {
+    microsteps[t].trace = mis.trace;
+  }
+  else {
+    microsteps[t].trace = previous.trace;
+  }
+
+  // Update local variables
+  var trl = microsteps[t].trace.length; 
+  if (trl > 0 && mis.hasOwnProperty("local")) {
+    // deep copy first
+    microsteps[t].trace = JSON.parse(JSON.stringify(microsteps[t].trace))
+    microsteps[t].trace[trl - 1].vars = mis.local;
+  }
+
+  if (mis.hasOwnProperty("shared")) {
+    microsteps[t].shared = convert_vars(mis.shared);
+  }
+  else {
+    microsteps[t].shared = previous.shared;
+  }
+
+  if (mis.hasOwnProperty("fp")) {
+    microsteps[t].fp = mis.fp;
+  }
+  else {
+    microsteps[t].fp = previous.fp;
+  }
+  if (mis.hasOwnProperty("pop")) {
+    var n = parseInt(mis.pop);
+    microsteps[t].stack = previous.stack.slice(0,
+                              previous.stack.length - n);
+  }
+  else {
+    microsteps[t].stack = previous.stack;
+  }
+  if (mis.hasOwnProperty("push")) {
+    var vals = mis.push.map(x => json_string(x));
+    microsteps[t].stack = microsteps[t].stack.concat(vals);
+  }
+}
+
+function init_macrostep(i) {
+  var mas = state.macrosteps[i];
+  for (var j = 0; j < mas.microsteps.length; j++) {
+    init_microstep(i, j);
+  }
+  for (var ctx = 0; ctx < mas.contexts.length; ctx++) {
+    var tid = parseInt(mas.contexts[ctx].tid);
+    threads[tid].name = mas.contexts[ctx].name;
+  }
+}
+
+function dict_convert(d) {
+  if (typeof d === "string") {
+    return d;
+  }
+  result = "";
+  for (var k in d) {
+    if (result != "") {
+      result += ", ";
+    }
+    result += dict_convert(k) + ":" + dict_convert(d[k]);;
+  }
+  return "{" + result + "}";
+}
+
+function get_shared(shared, path) {
+  if (!shared.hasOwnProperty(path[0])) {
+    return "";
+  }
+  if (path.length == 1) {
+    return dict_convert(shared[path[0]]);
+  }
+  return get_shared(shared[path[0]], path.slice(1));
+}
+
+function get_status(ctx) {
+  var status = ctx.mode;
+  if (status != "terminated") {
+    if (ctx.atomic > 0) {
+      status += " atomic";
+    }
+    if (ctx.readonly > 0) {
+      status += " read-only";
+    }
+    if (ctx.interruptlevel > 0) {
+      status += " interrupts-disabled";
+    }
+  }
+  return status;
+}
+
+function escapeHTML(s) {
+  return s
+     .replace(/&/g, "&amp;")
+     .replace(/</g, "&lt;")
+     .replace(/>/g, "&gt;")
+     .replace(/"/g, "&quot;")
+     .replace(/'/g, "&#039;");
+}
+
+function run_microstep(t) {
+  var mis = microsteps[t];
+  var mesrow = mestable.rows[mis.mesidx];
+  mesrow.cells[3].innerHTML = mis.npc;
+
+  for (var i = 0; i < vardir.length; i++) {
+    mesrow.cells[i + 4].innerHTML = get_shared(mis.shared, vardir[i])
+  }
+
+  if (mis.failure != null) {
+    stackTrace(mis.tid, mis.trace, mis.failure);
+  }
+  else if (mis.print != null) {
+    stackTrace(mis.tid, mis.trace, "print " + mis.print);
+    addToLog(mis.mesidx, mis.print)
+  }
+  else {
+    stackTrace(mis.tid, mis.trace, mis.choose);
+  }
+
+  for (var ctx = 0; ctx < mis.contexts.length; ctx++) {
+    var tid = parseInt(mis.contexts[ctx].tid);
+    threads[tid].name = mis.contexts[ctx].name;
+    threadtable.rows[tid].cells[1].innerHTML = get_status(mis.contexts[ctx]);
+    threadtable.rows[tid].cells[3].innerHTML = mis.contexts[ctx].stack.map(x => json_string(x));
+  }
+  var mes = megasteps[mis.mesidx];
+  if (t != mes.startTime + mes.nsteps - 1) {
+    threadtable.rows[mis.tid].cells[1].innerHTML = get_status(mis);
+  }
+  threadtable.rows[mis.tid].cells[3].innerHTML = mis.stack.slice(mis.fp);
+
+  if (mis.invfails.length > 0) {
+    var inv = mis.invfails[0];
+    code = getCode(inv.pc);
+    coderow.style.color = "red";
+    coderow.innerHTML = code.file + ":" + code.line + "&nbsp;&nbsp;&nbsp;" + escapeHTML(code.code) + " (" + inv.reason + ")";
+    mis.cloc = null;
+  }
+  else {
+    coderow.style.color = "blue";
+    if (t+1 < microsteps.length) {
+      var nmis = microsteps[t+1];
+      code = getCode(nmis.pc);
+      var l1 = parseInt(code.line);
+      var l2 = parseInt(code.endline);
+      if (l1 == l2 && l1 == code.stmt[0] && l2 == code.stmt[2]) {
+        var c1 = parseInt(code.column) - 1;
+        var c2 = parseInt(code.endcolumn);
+        var s1 = code.code.slice(0, c1);
+        var s2 = code.code.slice(c1, c2);
+        var s3 = code.code.slice(c2);
+        coderow.innerHTML = code.file + ":" + code.line + "&nbsp;&nbsp;&nbsp;" + escapeHTML(s1) + "<span style='color:green'>" + escapeHTML(s2) + "</span>" + escapeHTML(s3);
+      }
+      else {
+        coderow.innerHTML = code.file + ":" + code.line + "&nbsp;&nbsp;&nbsp;" + escapeHTML(code.code);
+      }
+    }
+  }
+
+  if (t+1 < microsteps.length) {
+    var nmis = microsteps[t+1];
+    hvmrow.innerHTML = "T" + nmis.tid + "/" + nmis.pc + ": " + nmis.hvm + " (" + nmis.explain + ")"
+    currCloc = document.getElementById('C' + nmis.pc)
+    currOffset = document.getElementById('P' + nmis.pc);
+  }
+  else {
+    currCloc = null;
+    currOffset = mis.offset;
+  }
+}
+
+function run_microsteps() {
+  coderow.innerHTML = "";
+  hvmrow.innerHTML = "";
+  if (currCloc != null) {
+    currCloc.style.color = "black";
+  }
+  currCloc = document.getElementById('C0');
+  currOffset = document.getElementById('P0');
+  for (var i = 0; i < nmegasteps; i++) {
+    mestable.rows[i].cells[3].innerHTML = "";
+    for (var j = 0; j < vardir.length; j++) {
+      mestable.rows[i].cells[j + 4].innerHTML = "";
+    }
+    megasteps[i].log.innerHTML = "";
+  }
+  for (var tid = 0; tid < nthreads; tid++) {
+    threadtable.rows[tid].cells[1].innerHTML = "init";
+    stackTrace(tid, [], null);
+    threadtable.rows[tid].cells[3].innerHTML = threads[tid].stack;
+  }
+
+  var mis = microsteps[0];
+  var mesrow = mestable.rows[mis.mesidx];
+  mesrow.cells[3].innerHTML = 0;
+  hvmrow.innerHTML = "T" + mis.tid + "/" + mis.pc + ": " + mis.hvm + " (" + mis.explain + ")"
+
+  for (var t = 0; t < currentTime; t++) {
+    run_microstep(t);
+  }
+  for (var i = 0; i < nmegasteps; i++) {
+    drawTimeLine(megasteps[i]);
+  }
+  container.scrollTop = currOffset.offsetTop;
+
+  if (currCloc != null) {
+    currCloc.style.color = "red";
+  }
+
+  var curmes = currentTime < totalTime ? microsteps[currentTime].mesidx : -1;
+  for (var mes = 0; mes < nmegasteps; mes++) {
+    var row = document.getElementById("mes" + mes)
+    if (mes == curmes) {
+      row.style = 'background-color: #A5FF33;';
+    }
+    else {
+      row.style = 'background-color: white;';
+    }
+  }
+
+  var curtid = currentTime < totalTime ? microsteps[currentTime].tid : -1;
+  for (var tid = 0; tid < nthreads; tid++) {
+    var row = document.getElementById("thread" + tid)
+    if (tid == curtid) {
+      row.style = 'background-color: #A5FF33;';
+    }
+    else {
+      row.style = 'background-color: white;';
+    }
+  }
+}
+
+// Initialization starts here
+
+for (var tid = 0; tid < nthreads; tid++) {
+  threads[tid] = {
+    name: "T" + tid,
+    status: "normal",
+    stack: [],
+    stacktrace: [],
+    tracetable: document.getElementById("threadinfo" + tid)
+  };
+}
+threads[0].stack = [ "()" ]
+for (let i = 0; i < nmegasteps; i++) {
+  var canvas = document.getElementById("timeline" + i);
+  megasteps[i] = {
+    canvas: canvas,
+    startTime: 0,
+    nsteps: 0,
+    contexts: [],
+    log: document.getElementById("log" + i)
+  };
+  canvas.addEventListener('mousedown', function(e){handleClick(e, i)});
+}
+for (var j = 0; j < state.macrosteps.length; j++) {
+  init_macrostep(j);
+}
+
+currentTime = totalTime = microsteps.length;
+run_microsteps();
+document.addEventListener('keydown', handleKeyPress);
+
+</script>
+</body>
+</html>
