@@ -4,8 +4,8 @@ def Election(n,m):
     result = {.candidates:[0,]*n, .cand_locks:[Lock(),]*n, .citizens:[{.voted: False, .voted_for: -1},]*m, .cit_locks:[Lock(),]*m}
 
 def vote(election, candidate, citizen):
-    acquire(?election->cit_locks[citizen])
     acquire(?election->cand_locks[candidate])
+    acquire(?election->cit_locks[citizen])
 
     if election->citizens[citizen].voted:
         result = False
@@ -18,20 +18,34 @@ def vote(election, candidate, citizen):
     release(?election->cit_locks[citizen])
     release(?election->cand_locks[candidate])
 
+
 def withdraw(election, citizen):
     acquire(?election->cit_locks[citizen])
+    var orig_vote = election->citizens[citizen].voted_for
+    release(?election->cit_locks[citizen])
+
+    if orig_vote == -1:
+        result = False
+    else:
+        acquire(?election->cand_locks[orig_vote])
+        acquire(?election->cit_locks[citizen])
+        
+        var new_voted = election->citizens[citizen]
+        if new_voted != orig_vote:
+            result = False
+        else:
+            election->citizens[citizen].voted = False
+            election->candidates[orig_vote] -= 1
+            election->citizens[citizen].voted_for = -1
+            result = True
+
+        release(?election->cit_locks[citizen])
+        release(?election->cand_locks[orig_vote])
+
     if election->citizens[citizen].voted:
-        election->citizens[citizen].voted = False
-        var candidate = election->citizens[citizen].voted_for
-        acquire(?election->cand_locks[candidate])
-        election->candidates[candidate] -= 1
-        release(?election->cand_locks[candidate])
-        election->citizens[citizen].voted_for = -1
-        result = True
+        pass
     else:
         result = False
-
-    release(?election->cit_locks[citizen])
 
 
 def get_votes(election, candidate):
@@ -40,8 +54,13 @@ def get_votes(election, candidate):
     release(?election->cand_locks[candidate])
 
 def transfer(election, candidate_from, candidate_to):
-    acquire(?election->cand_locks[candidate_from])
-    acquire(?election->cand_locks[candidate_to])
+    if candidate_from < candidate_to:
+        acquire(?election->cand_locks[candidate_from])
+        acquire(?election->cand_locks[candidate_to])
+    else:
+        acquire(?election->cand_locks[candidate_to])
+        acquire(?election->cand_locks[candidate_from])
+
 
     election->candidates[candidate_to] += election->candidates[candidate_from]
     election->candidates[candidate_from] = 0
@@ -49,10 +68,17 @@ def transfer(election, candidate_from, candidate_to):
         acquire(?election->cit_locks[i])
         if (election->citizens[i].voted_for == candidate_from):
             election->citizens[i].voted_for = candidate_to
-        release(?election->cit_locks[i])
 
-    release(?election->cand_locks[candidate_from])
-    release(?election->cand_locks[candidate_to])
+    for i in {0 .. len(election->citizens) - 1}:
+        var idx = len(election->citizens) - i
+        release(?election->cit_locks[idx - 1])
+
+    if candidate_from > candidate_to:
+        release(?election->cand_locks[candidate_from])
+        release(?election->cand_locks[candidate_to])
+    else:
+        release(?election->cand_locks[candidate_to])
+        acquire(?election->cand_locks[candidate_from])
 
 def winner(election):
     var winner = -1;
