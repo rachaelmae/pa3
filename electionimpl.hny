@@ -19,8 +19,7 @@ def vote(election, candidate, citizen):
     release(?election->cand_locks[candidate])
 
 def withdraw(election, citizen):
-    acquire(?election->cit_locks[citizen]) # I think we need some kind of way to return false if the value is changed
-
+    acquire(?election->cit_locks[citizen])
     if election->citizens[citizen].voted:
         election->citizens[citizen].voted = False
         var candidate = election->citizens[citizen].voted_for
