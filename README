@@ -1,0 +1,12 @@
+From class, recall that a deadlock can occur iff bounded resources, no 
+preepmtion, wait while holding, and circular waiting all hold. To prevent 
+circular-waiting and ensure that deadlock does not occur we implemented 
+hierarchical resource allocation. By assigning all citizens and candidates 
+various “levels” and following all the rules of Havender’s scheme, we ensure 
+that citizens/candidates are not holding onto one resource each waiting for 
+the other resource. 
+
+These choices allow for better performance because instead
+of using one mutex to lock any votes, withdraws, or transfers, we use one lock
+for each citizen and candidate allowing for concurrent changes which otherwise
+would not be possible.
