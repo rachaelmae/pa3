@@ -74,8 +74,49 @@ election.vote(?e_two, 2, 3)
 var winner = election.winner(?e_two)
 assert winner == 2
 
+NUM_CANDIDATES2 = 2 
+NUM_CITIZENS2 = 4
+WINNER2 = 0
+e2 = election.Election(NUM_CANDIDATES2, NUM_CITIZENS2)
 
+#casting initial vote
+voted = election.vote(?e2, 1, 0)
+assert voted == True 
 
+#ensuring that vote count is correct
+num_votes = election.get_votes(?e2, 1)
+assert num_votes == 1 
 
+#trying to cast a vote from a citizen who has already voted
+result = election.vote(?e2, 0, 0)
+assert result == False
+num_votes = election.get_votes(?e2, 0)
+assert num_votes == 0
 
+#withdrawing and making sure that it works 
+withdrew = election.withdraw(?e2,0)
+assert withdrew == True 
+num_votes = election.get_votes(?e2, 1)
+assert num_votes == 0
+
+#withdrawing a voter that has not voted
+withdrew = election.withdraw(?e2,0)
+assert withdrew == False
+
+election.vote(?e2, 1, 0)
+election.vote(?e2, 1, 1)
+election.vote(?e2, 1, 2)
+election.vote(?e2, 1, 3)
+
+#transfering
+election.transfer(?e2, 1,0)
+num_votes = election.get_votes(?e2,0)
+assert num_votes == 4 
+
+#checking that there are no votes from candidate that got transfered
+num_votes = election.get_votes(?e2,1)
+assert num_votes ==0
+
+winner = election.winner(?e2)
+assert winner == WINNER2
 
